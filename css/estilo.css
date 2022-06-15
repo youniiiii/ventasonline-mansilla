@@ -53,12 +53,17 @@ li {
     justify-content: center;
 }
 
+.submenu li a h2 {
+    font-size: 24px;
+    text-decoration: none;
+}
+
 .submenu li {
     margin: 1%;
     background-color: transparent;
     position: sticky;
     padding: 0% 1%;
-    font-size: 12px;
+    font-size: 0px;
     height: 100%;
     text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333);
 }

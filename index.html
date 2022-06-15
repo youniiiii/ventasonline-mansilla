@@ -19,10 +19,10 @@
                 <img src="/imagenes/logonegro.png " width="40px " height="40px " alt="imagen de logo empresa ">
             </a>
             <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarScroll " aria-controls="navbarScroll " aria-expanded="false " aria-label="Toggle navigation ">
-            <span class="navbar-toggler-icon "></span>
-          </button>
+                <span class="navbar-toggler-icon "></span>
+            </button>
             <div class=" derecha collapse    navbar-collapse " id="navbarScroll ">
-                <ul class=" navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px; ">
+                <ul class=" navbar-nav  me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px; ">
                     <li class="nav-item ">
                         <a class="nav-link active " aria-current="page " href="./index.html ">inicio</a>
                     </li>
@@ -46,7 +46,7 @@
                     </li>
                     <li class="nav-item ">
                         <form class="d-flex card-text placeholder-glow nav-link " role="search">
-                            <button class="lupa placeholder  active" type="submit">	
+                            <button class="lupa placeholder  active" type="submit">
                                 &#128270;</button>
                             <input class="me-1 lupa " type="search" placeholder="Search" aria-label="Search">
                         </form>
@@ -55,9 +55,9 @@
                     <li class="nav-item  ">
                         <a href="./paginas/registro.html" class="nav-link active">registrarse</a>
                     </li>
-                    <li class="nav-item  ">
-                        <a href="./paginas/iniciarsesion.html" class="nav-link active">login
-                        </a>
+                    <li class="nav-item">
+
+                        <a href="./paginas/iniciarsesion.html" class="nav-link active "> login</a>
                     </li>
 
                 </ul>
@@ -77,26 +77,20 @@
         </div>
     </header>
     <main>
-        <section class="contenido4">
-
-            <div class="ofertas">
-                <ul class="ofertalista">
-
-                    <li><img src="./imagenes/ofertas2.jpg" alt="electrodomesticos en oferta" width="100%" height="400">
-                    </li>
-                    <li><img src="./imagenes/oferta5.jpg" alt="electrodomesticos en oferta" width="100%" height="400">
-                    </li>
-                    <li><img src="./imagenes/ofertas.png" alt="electrodomesticos en oferta" width="100%" height="400">
-                    </li>
-                    <li><img src="./imagenes/ofertas3.jpg" alt="electrodomesticos en oferta" width="100%" height="400">
-                    </li>
-                    <li><img src="./imagenes/ofertas2.jpg" alt="electrodomesticos en oferta" width="100%" height="400">
-                    </li>
-
-                </ul>
+        <!--inicio del carrucel de bootstrap -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imagenes/oferta4.jpg" class="d-block w-100" id="medida" alt="foto oferta">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/ofertas3.jpg" class="d-block w-100" id="medida" alt="foto oferta">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/ofertas2.jpg" class="d-block w-100" id="medida" alt="foto oferta">
+                </div>
             </div>
-        </section>
-
+        </div>
         <section>
 
             <div class="caja  ">
@@ -292,7 +286,8 @@
     <!-- JavaScript Bundle with Popper -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous ">
+    </script>
 
 </body>
 

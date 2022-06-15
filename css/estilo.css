@@ -153,60 +153,15 @@ p.parrafo {
 /*fin de letras moviles */
 
 
-/*  PÀGINA  DE   FOTOS MOVIL*/
+/* carrusel con bootstrap */
 
-.ofertas {
+#medida {
     width: 90%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.ofertas ul {
-    display: flex;
-    padding: 0;
-    width: 500%;
-    animation: cambio 10s infinite;
-    animation-direction: alternate;
-}
-
-.ofertas li {
-    width: 100%;
-    list-style: none;
-}
-
-.ofertas img {
-    width: 100%;
-}
-
-@keyframes cambio {
-    0% {
-        margin-right: 0;
-    }
-    20% {
-        margin-right: 0;
-    }
-    25% {
-        margin-right: -100%;
-    }
-    45% {
-        margin-right: -100%;
-    }
-    50% {
-        margin-right: -200%;
-    }
-    70% {
-        margin-right: -200%;
-    }
-    75% {
-        margin-right: -300%;
-    }
-    100% {
-        margin-right: -300%;
-    }
+    height: 400px;
 }
 
 
-/* FIN SECTOR DE IMAGEN MOVIL*/
+/* fin carrusel */
 
 
 /*:::::Pie de Pagina*/

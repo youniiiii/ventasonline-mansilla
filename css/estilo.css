@@ -7,7 +7,7 @@
 body {
     align-items: baseline;
     font-family: sans-serif;
-    background: url(/imagenes/a.webp) no-repeat;
+    background: url(../imagenes/a.webp) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

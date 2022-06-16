@@ -292,6 +292,12 @@ section form fieldset {
     margin-bottom: 4%;
 }
 
+iframe {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
 form fieldset.catalogo {
     margin-top: 2%;
     margin-bottom: 4%;
@@ -1023,6 +1029,10 @@ tr.estilizar th {
         text-transform: uppercase;
         margin: 30px auto;
         color: #000000;
+        display: flex;
+        align-content: center;
+        align-items: stretch;
+        justify-content: center;
     }
     .lista li {
         margin: 20px 0;
@@ -1083,9 +1093,6 @@ tr.estilizar th {
         padding: 5px 0px;
         text-align: center;
         align-items: center;
-    }
-    .box figure a img {
-        display: none;
     }
     .piePagina {
         width: 100%;

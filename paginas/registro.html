@@ -66,99 +66,47 @@
         </div>
     </nav>
 
-    <header>
-        <div class="caja">
-            <p class="parrafo">somos</p>
-            <ul class="lista">
-                <li>confianza</li>
-                <li>calidad y precio</li>
-                <li>tu mejor opcion</li>
-            </ul>
-        </div>
-    </header>
-
-
     <main>
         <section>
             <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/N3JWgyS6lDU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section>
-            <form action="" class="hijos3">
-
-                <fieldset style="text-align:center;">
+            <form action="">
+                <fieldset class="form-register">
                     <legend>
-                        <h2>registrarme</h2>
+                        <h4>registrarme</h4>
                     </legend>
+
                     <label for="nombre">nombre</label>
-                    <br>
-                    <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
-                    <br>
+                    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+
                     <label for="apellido">apellido</label>
-                    <br>
-                    <input type="text" name="apellido" id="apellido" placeholder="apellido" required>
-                    <br>
+                    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+
                     <label for="email">email</label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="email" required>
-                    <br>
-                    <label for="usuario">usuario</label>
-                    <br>
-                    <input type="text" name="usuario" id="usuario" placeholder="usuario" required>
-                    <br>
+                    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
 
-                    <label for="password">contraseña</label>
-                    <br>
-                    <input type="password" name="password" id="password" placeholder="password" required>
-                    <br>
-
-                    <label for="local">masculino</label>
-                    <input type="radio" name="entrega" id="local" value="local" required>
-
-                    <label for="envio">femenino</label>
-                    <input type="radio" name="entrega" id="envio" value="envio" required>
-
-                    <br>
-                    <label for="localidad">edad</label>
-                    <select name="localidad" id="localidad" required>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                            <option value="32">32</option>
-                            <option value="otros">otros</option>
-                        </select>
-                    <br>
-
-                    <fieldset>
-
-                        <legend>
-                            <h2>acepto los terminos</h2>
-                        </legend>
-
-                        <label for="si">si</label>
-                        <input type="radio" name="esto" id=" si " value="si" required>
-
-                        <label for="no">no</label>
-                        <input type="radio" name="esto" id="no " value="no" required>
-
-                    </fieldset>
+                    <label for="password">contraseña</label><input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+                    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese de nuevo su Contraseña">
 
 
-                    <input type="submit" value="registrar" class="boto">
-                    <input type="reset" value="cancelar" class="boto">
+                    <legend>
+                        <h2> Terminos y Condiciones</h2>
+                    </legend>
+
+                    <label for="si">si acepto</label>
+                    <input type="radio" name="esto" id=" si " value="si" required>
+
+                    <label for="no">no acepto</label>
+                    <input type="radio" name="esto" id="no " value="no" required>
+
+
+                    <input class="botons" type="submit" value="Registrar">
+                    <p><a href="../paginas/iniciarsesion.html">¿Ya tengo Cuenta?</a></p>
                 </fieldset>
             </form>
         </section>
+
     </main>
 
     <!--::::Pie de Pagina::::::-->

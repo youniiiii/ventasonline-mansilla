@@ -745,7 +745,8 @@
         align-items: center;
         align-content: center;
         transition: 2s;
-        text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333);
+        text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333); 
+        flex-direction: row;
     }
     
     @keyframes animar {
@@ -1036,7 +1037,7 @@
             height: auto;
             margin: 0 1%;
         }
-        .logo img {
+        .menu-logo {
             display: none;
         }
         .caja {
@@ -1094,8 +1095,7 @@
             flex-direction: column;
             padding: auto;
             margin: 0%;
-        }
-        .padre-cajita {
+        }.padre-cajita {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
@@ -1116,6 +1116,9 @@
             justify-content: center;
             justify-items: auto;
             flex-direction: column;
+        }
+        .animat {
+            display: none;
         }
     }
     

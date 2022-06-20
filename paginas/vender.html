@@ -18,7 +18,7 @@
             <a href="../index.html " alt="inicio " class="logo ">
                 <img src="../imagenes/logonegro.png " width="40px " height="40px " alt="imagen de logo empresa ">
             </a>
-            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarScroll " aria-controls="navbarScroll " aria-expanded="false " aria-label="Toggle navigation ">
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarScroll " aria-controls="navbarScroll " aria-expanded="false " aria-label="Toggle navigation ">
             <span class="navbar-toggler-icon "></span>
           </button>
             <div class=" derecha collapse navbar-collapse " id="navbarScroll ">
@@ -84,16 +84,16 @@
         <section>
             <form action="envio.php" method="post" class="hijos3">
 
-                <fieldset class="ayuda">
+                <fieldset class="ayuda  form-register">
                     <label for="direccion">nombre del producto</label>
                     <br>
-                    <input name="direccion" id="direccion" placeholder="producto">
+                    <input  class="controls" name="direccion" id="direccion" placeholder="producto">
                     <br><br> <label for="imagen">ingrese imagen</label>
                     <input accept="image/*" type="file" name="imagen" id="imagen" multiple>
                     <br>
                     <legend>vender</legend>
-                    <label for="cantidad ">cantidad en stock</label>
-                    <select name="cantidad " id="cantidad ">
+                    <label for="cantidad">cantidad en stock</label>
+                    <select name="cantidad" class="controls" id="cantidad">
                             <option value="1 ">1</option>
                             <option value="2 ">2</option>
                             <option value="3 ">3</option>
@@ -101,8 +101,8 @@
                             <option value="5 ">5</option>
                             <option value="6 ">6</option>
                         </select> <br><br>
-                    <label for="color ">color</label>
-                    <select name="color " id="color ">
+                    <label for="color">color</label>
+                    <select name="color" id="color" class="controls">
                             <option value="negro ">negro</option>
                             <option value="gris ">gris</option>
                             <option value="blanco ">blanco</option>
@@ -111,19 +111,19 @@
 
                         </select><br><br>
                     <label for="precio">indique precio</label>
-                    <input type="number" name="precio" id="precio" placeholder="	
+                    <input type="number" class="controls" name="precio" id="precio" placeholder="	
                         &#128178;"><br>
                     <label for="info">indique caracteristicas de producto</label>
                     <br>
-                    <input type="text " name="info " id="info " placeholder="caracteristicas ">
+                    <input type="text" name="info" class="controls" id="info" placeholder="caracteristicas">
 
                     <legend>informacion adicional</legend>
 
                     <label for="mensaje"></label>
-                    <textarea name="mensaje " id="mensaje " cols="30 " rows="10 "></textarea>
+                    <textarea name="mensaje" id="mensaje" cols="30" class="controls" rows="10"></textarea>
                     <br><br><br>
-                    <input type="submit" class="boto" value="vender">
-                    <input type="reset" class="boto" value="cancelar">
+                    <input type="submit" class="botons" value="vender">
+                    <input type="reset" class="botons" value="cancelar">
 
                 </fieldset>
 
@@ -132,15 +132,15 @@
 
             <form action=" " class="hijos3">
 
-                <fieldset class="ayuda">
+                <fieldset class="ayuda form-register">
                     <legend>dudas y consultas</legend>
                     <br><br>
                     <label for="mensaje">mensaje</label>
                     <br>
-                    <textarea name="mensaje" id="mensaje" cols="30 " rows="10 "></textarea>
+                    <textarea name="mensaje" class="controls" id="mensaje" cols="30 " rows="10 "></textarea>
                     <br><br>
-                    <input type="submit" class="boto" value="enviar ">
-                    <input type="reset" class="boto" value="cancelar ">
+                    <input type="submit" class="botons" value="enviar">
+                    <input type="reset" class="botons" value="cancelar">
                 </fieldset>
 
             </form>

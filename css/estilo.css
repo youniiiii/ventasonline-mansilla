@@ -587,7 +587,7 @@
     }
     
     section#dudas {
-        background: rgb(255, 255, 255);
+        background: transparent;
         height: 100%;
         width: 100%;
         margin: 0%;
@@ -600,7 +600,7 @@
     
     .form-register {
         width: 100%;
-        background: #24303c;
+        background: url(../imagenes/a.webp);
         padding: 30px;
         margin: 10% auto;
         margin-top: 100px;

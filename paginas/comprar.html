@@ -119,27 +119,27 @@
             <section class="compra " id="calificacion">
 
                 <form action=" " class="miFormula ">
-                    <fieldset>
+                    <fieldset    class="form-register">
                         <legend>comentarios</legend>
                         <br><br>
                         <label for="mensaje">comentario</label>
                         <br>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        <textarea class="controls" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
                         <br><br>
-                        <input class="boto" type="submit " value="enviar">
-                        <input class="boto" type="reset" value="cancelar">
+                        <input class="botons" type="submit" value="enviar">
+                        <input class="botons" type="reset" value="cancelar">
                     </fieldset>
                 </form>
             </section>
             <section class="compra " id="formulario">
                 <form class="miFormula ">
-                    <fieldset>
+                    <fieldset    class="form-register">
                         <legend>
                             <h2>$67.500</h2>
                         </legend>
-                        <label for=" cantidad ">cantidad en stock</label>
-                        <select name="cantidad " id="cantidad ">
+                        <label for=" cantidad">cantidad en stock</label>
+                        <select name="cantidad"class="controls" id="cantidad">
                         <option value="1 ">1</option>
                         <option value="2 ">2</option>
                         <option value="3 ">3</option>
@@ -148,87 +148,42 @@
                         <option value="6 ">6</option>
                     </select> <br><br>
                         <label for="color ">color</label>
-                        <select name="color " id="color ">
+                        <select name="color "class="controls" id="color ">
                         <option value="negro ">negro</option>
                         <option value="gris ">gris</option>
                     </select><br><br>
                         <label for="direccion ">direccion</label>
-                        <input type="text " name="direccion " id="direccion " placeholder="direccion ">
+                        <input type="text" class="controls" name="direccion" id="direccion" placeholder="direccion">
                         <br><br>
 
                         <legend>informacion adicional</legend>
 
-                        <label for="mensaje "></label>
-                        <textarea name="mensaje " id="mensaje " cols=" 30 " rows=" 10 "></textarea>
+                        <label for="mensaje"></label>
+                        <textarea name="mensaje" class="controls" id="mensaje " cols=" 30 " rows=" 10 "></textarea>
                         <br><br><br>
-                        <input class="boto " type="submit " value="compra ">
-                        <input class="boto " type="reset " value="cancelar ">
+                        <input class="botons" type="submit" value="compra">
+                        <input class="botons" type="reset" value="cancelar">
 
                     </fieldset>
                 </form>
             </section>
-            <section class=" compra " id="dudas">
+            <section class="compra" id="dudas">
                 <form action=" " class="miFormula ">
-                    <fieldset>
+                    <fieldset   class="form-register">
                         <legend>dudas y consultas</legend>
                         <br><br>
                         <label for=" mensaje ">dudas y consultas</label>
                         <br>
-                        <textarea name=" mensaje " id=" mensaje " cols=" 30 " rows=" 10 "></textarea>
+                        <textarea class="controls" name=" mensaje " id=" mensaje " cols=" 30 " rows=" 10 "></textarea>
                         <br><br>
-                        <input class="boto " type="submit " value="enviar ">
-                        <input class="boto " type="reset " value="cancelar ">
+                        <input class="botons" type="submit" value="enviar">
+                        <input class="botons" type="reset" value="cancelar">
                     </fieldset>
                 </form>
             </section>
 
         </div>
 
-        <!-- acordion-->
-        <section class="bg-light py-3">
-            <div class="container-fluid">
-                <div class="row">
-                    <article class="col-md-4" id="miCajaFija">
-                        <img src="../imagenes/ofertas.png" alt="" class="w-100 rounded-2 border-2">
-                    </article>
-                    <article class="col-md-8">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #1
-                                </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                  Accordion Item #2
-                                </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                  Accordion Item #3
-                                </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but
-                                        just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!--::::Pie de Pagina::::::-->

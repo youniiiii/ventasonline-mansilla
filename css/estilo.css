@@ -349,8 +349,14 @@
         color: #ffffff;
         border-radius: 30px;
     }
-    
+
+    span p {
+        margin: 5%;
+    }
+        
     .boto {
+        
+        color: #000000;
         background: transparent;
         border-radius: 30px;
         width: 70px;
@@ -359,12 +365,8 @@
     }
     
     .boto:hover {
-        color: white;
-        background: #000000;
-    }
-    
-    span p {
-        margin: 5%;
+        color: rgb(255, 255, 255);
+        background: #1c53d2;
     }
     
     form.catal {
@@ -664,9 +666,23 @@
     }
     
     .card-body button.boto {
-        color: blue;
+        color: rgb(0, 0, 0);
         justify-items: center;
         width: auto;
+    }
+    .boto {
+        
+        color: #000000;
+        background: transparent;
+        border-radius: 30px;
+        width: 70px;
+        border: none;
+        margin: 5%;
+    }
+    
+    button.boto:hover {
+        color: rgb(255, 255, 255);
+        background: #1c53d2;
     }
     
     .centrado {
@@ -729,7 +745,7 @@
     
     #miCajaFija {
         width: 90%;
-    }
+    }    
     /*animaciones  creadas para el proyecto y para precentar */
     
     .animat {

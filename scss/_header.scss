@@ -1,0 +1,38 @@
+@import "-variables";
+// header de categorias  se uso linear-gradient */
+     
+.color-blanco {
+    color:white;
+   }
+.submenu {
+    margin: 0;
+    background: linear-gradient(to top, white, #326fff);
+    display: flex;
+    justify-items: center center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.submenu li a h2 {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.submenu li {
+    margin: 1%;
+    background-color: transparent;
+    position: sticky;
+    padding: 0% 1%;
+    font-size: 0px;
+    height: 100%;
+    text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333);
+}
+
+.submenu li:hover {
+    transform: translateY(-5px);
+}
+//  fin de  header de codigos  relacionados al  menu de categorias */
+
+

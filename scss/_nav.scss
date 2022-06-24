@@ -1,0 +1,36 @@
+@import "-variables";
+
+li {
+    margin: 0 1%;
+}
+
+.lupa {
+    border-radius:35px;
+    background: $blanco;
+    border: none;
+    color: rgb(254, 153, 0);
+    width: auto;
+}
+
+.logo img {
+    background:transparent;
+    border-radius: 100px;
+}
+/* fin nav botonera
+
+/* cambio en los logos  */
+
+.logo {
+    padding: 0px 0px;
+    align-items: center;
+}
+
+.box figure a img {
+    box-shadow: none;
+}
+
+.logo:hover,
+.box img:hover {
+    filter: invert(100%);
+}
+/*fin de cambios en los logos */

@@ -1,1413 +1,1170 @@
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Patrick+Hand&display=swap');
-    * {
-        box-sizing: border-box;
-        text-decoration: none;
-    }
-    
-    body {
-        align-items: baseline;
-        font-family: sans-serif;
-        background: url(../imagenes/a.webp) no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-        height: calc(100vh);
-        padding: 0%;
-        width: 100%;
-    }
-    /*
-    inicio nav botonera
-    */
-    
-    li {
-        margin: 0 1%;
-    }
-    
-    .lupa {
-        background: transparent;
-        border: none;
-        color: rgb(254, 153, 0);
-        width: auto;
-    }
-    
-    .logo img {
-        border-radius: 100px;
-    }
-    /* fin nav botonera
-    
-    
-        /* header de categorias  se uso linear-gradient */
-    
-    .submenu {
-        margin: 0;
-        background: linear-gradient(to top, white, #326fff);
-        display: flex;
-        justify-items: center center;
-        align-items: center;
-        margin: auto;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .submenu li a h2 {
-        font-size: 24px;
-        text-decoration: none;
-    }
-    
-    .submenu li {
-        margin: 1%;
-        background-color: transparent;
-        position: sticky;
-        padding: 0% 1%;
-        font-size: 0px;
-        height: 100%;
-        text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333);
-    }
-    
-    .submenu li:hover {
-        transform: translateY(-5px);
-    }
-    /*  fin de  header de codigos  relacionados al  menu de categorias */
-    /* cambio en los logos  */
-    
-    .logo {
-        padding: 0px 0px;
-        align-items: center;
-    }
-    
-    .box figure a img {
-        box-shadow: none;
-    }
-    
-    .logo:hover,
-    .box img:hover {
-        filter: invert(100%);
-    }
-    /*fin de cambios en los logos */
-    /* inicio letras moviles */
-    
-    .caja {
-        font-family: 'Patrick Hand', cursive;
-        width: 400px;
-        height: 45px;
-        color: rgb(255, 255, 255);
-        font-size: 40px;
-        line-height: 40px;
-        display: flex;
-        position: relative;
-        margin: auto;
-        overflow: hidden;
-        text-transform: uppercase;
-        margin: 40px auto;
-    }
-    
-    ul.lista {
-        list-style: none;
-        padding-left: 10px;
-        animation: cambiar 6s infinite;
-    }
-    
-    ul.lista,
-    p.parrafo {
-        margin: 0;
-    }
-    
-    @keyframes cambiar {
-        0% {
-            margin-top: 0;
-        }
-        20% {
-            margin-top: 0;
-        }
-        25% {
-            margin-top: -40px;
-        }
-        50% {
-            margin-top: -40px;
-        }
-        55% {
-            margin-top: -80px;
-        }
-        80% {
-            margin-top: -80px;
-        }
-        85% {
-            margin-top: -40px;
-        }
-        95% {
-            margin-top: -40px;
-        }
-        100% {
-            margin-top: 0;
-        }
-    }
-    /*fin de letras moviles */
-    /* carrusel con bootstrap */
-    
-    #medida {
-        width: 90%;
-        height: 400px;
-    }
-    /* fin carrusel */
-    /*:::::Pie de Pagina*/
-    
-    footer div { 
-        background:#0b4e9f;
-        
-       
-    }
-    
-    .piePagina {
-        width: 100%;
-        height: 0%;
-       
-    }
-    
-    .piePagina .grupo1 {
-        width: 100%;
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1%;
-        padding: 2px 0px;  
-        
-    }
-    
-    .piePagina .grupo1 .box figure {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .piePagina .grupo1 .box figure img {
-        width: 150px;
-    }
-    
-    .piePagina .grupo1 .box h2 {
-        color: rgb(255, 252, 252);
-        margin-bottom: 15px;
-        font-size: 20px;
-        text-align: center;
-        align-items: center;
-        text-decoration: none;
-    }
-    
-    .piePagina .grupo1 .box p {
-        color: #ffffff;
-        margin-bottom: 10px;
-        text-align: center;
-        align-items: center;
-    }
-    
-    .piePagina .grupo1 .redSocial a {
-        display: inline-block;
-        text-decoration: none;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        color: rgb(255, 245, 245);
-        margin-right: 10px;
-        background: transparent;
-        text-align: center;
-        align-items: center;
-        transition: all 300ms ease;
-        text-shadow: none;
-    }
-    
-    form {
-        width: 30%;
-        height: auto;
-    }
-    
-    .piePagina .grupo1 .redSocial a:hover {
-        color: #1500ff;
-        text-align: center;
-        align-items: center;
-        background: #0058fb;
-        border-radius: 25px;
-        box-shadow: none;
-    }
-    
-    .piePagina .grupo2 {
-        background-color: #00316d;
-        padding: 1% 1%;
-        text-align: center;
-        align-items: center;
-        color: rgb(255, 255, 255);
-    }
-    
-    .piePagina .grupo2 small {
-        font-size: 15px;
-    }
-    /*fin de pie de pagina */
-    /* articulos de  contenido  */
-    
-    section.contenido3 article {
-        position: relative;
-        margin: 5%;
-        display: inline-block;
-    }
-    
-    article:hover {
-        background: rgb(35, 77, 168);
-    }
-    
-    article h2 {
-        font-size: 15px;
-    }
-    
-    section form fieldset {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        border: none;
-        align-items: center;
-        background: white;
-    }
-    
-    .video iframe {
-        margin-top: 2%;
-        margin-bottom: 4%;
-    }
-    
-    iframe {
-        width: 90%;
-        height: 300px;
-        margin: 0 auto;
-    }
-    
-    form fieldset.catalogo {
-        margin-top: 2%;
-        margin-bottom: 4%;
-        text-align: center;
-        align-items: center;
-        padding: 0%;
-        margin: 5% 10%;
-        text-align: center;
-        align-items: center;
-        position: relative;
-    }
-    
-    form fieldset.catalogo legend h2 {
-        margin: 0;
-        width: 100%;
-        border-radius: 35%;
-        color: #000000;
-    }
-    
-    form fieldset.catalogos legend h2 {
-        margin: 10%;
-        width: 100%;
-    }
-    
-    form fieldset.catalogos {
-        margin-bottom: 40px;
-    }
-    
-    .tabla {
-        background: #ffffff;
-    }
-    
-    .tablaa {
-        margin: 30px;
-        background: #fff4f4;
-    }
-    
-    section.tablaa h2 {
-        color: black;
-    }
-    
-    .contener3 {
-        margin: 3%;
-    }
-    
-    form fieldset {
-        margin: 3% 10%;
-        box-shadow: 0 5px 15px rgb(44, 44, 44);
-    }
-    
-    form fieldset legend {
-        background: #0058fb;
-        width: 100%;
-        text-align: center;
-        margin: 2%;
-    }
-    
-    section button {
-        position: relative;
-        float: left;
-        background: #000000;
-        color: #ffffff;
-        border-radius: 30px;
-    }
-    
-    section button.dos {
-        position: relative;
-        float: right;
-        background: #000000;
-        color: #ffffff;
-        border-radius: 30px;
-    }
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Patrick+Hand&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none; }
 
-    span p {
-        margin: 5%;
-    }
-        
-    .boto {
-        
-        color: #000000;
-        background: transparent;
-        border-radius: 30px;
-        width: 70px;
-        border: none;
-        margin: 5%;
-    }
-    
-    .boto:hover {
-        color: rgb(255, 255, 255);
-        background: #1c53d2;
-    }
-    
-    form.catal {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .margen {
-        margin: 50px;
-    }
-    
-    .opaco {
-        opacity: 30%;
-    }
-    
-    #masAnchos {
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-    }
-    
-    option {
-        background: #2214c9;
-    }
-    
-    img,
-    video {
-        border-radius: 3%;
-        box-shadow: 0 5px 15px rgb(37, 37, 39);
-    }
-    
-    section h2 {
-        color: #ffffff;
-    }
-    
-    a:activo {
-        color: yellow;
-    }
-    
-    input {
-        padding: 7px;
-    }
-    
-    legend.centrar {
-        margin-left: 35%;
-    }
-    
-    article.tamaño {
-        padding: 200px;
-        background: #f6e9e9;
-        color: #000000;
-    }
-    
-    article.tamaño h2 {
-        color: rgb(255, 255, 255);
-        margin: 2%;
-        font-size: 20px;
-        text-transform: uppercase;
-        background: url(/imagenes/fondoo.jpg);
-    }
-    
-    article {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
-    }
-    
-    table.tablaContacto {
-        background: rgb(99, 116, 198);
-    }
-    
-    table.tablaContacto tr.tablaTitulo {
-        margin: 0%;
-        padding: 0%;
-    }
-    
-    table.tablaContacto {
-        border: rgb(255, 255, 255);
-        border-spacing: 15px;
-        background: rgb(206, 206, 206);
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    
-    div.grid-padre {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "hijo1 hijo2" "hijo3 hijo3";
-        margin: auto;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        grid-gap: 10px;
-    }
-    
-    div.hijos1 {
-        grid-area: hijo1;
-    }
-    
-    div.hijos2 {
-        grid-area: hijo2;
-    }
-    
-    div.hijos3 {
-        grid-area: hijo3;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    
-    .hijos3 {
-        grid-area: hijo3;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    
-    div.grid div {
-        margin: 2%;
-    }
-    
-    .ayuda {
-        padding: 0%;
-        margin: 0% auto;
-        text-align: center;
-        align-items: center;
-        position: relative;
-    }
-    
-    .ayuda legend {
-        padding: 0%;
-        margin: 3% 0%;
-    }
-    
-    h2 {
-        margin: 30px 0px;
-    }
-    
-    .tamañosLetra {
-        margin: 0%;
-        padding: 0%;
-    }
-    
-    .compra {
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-    }
-    /*caja grid en compras   inicio*/
-    
-    div.misCompra {
-        margin: 0%;
-        display: grid;
-        grid-template-areas: "video video video" "descripcion descripcion formulario""calificacion calificacion formulario"" dudas dudas  dudas";
-        grid-gap: 10px;
-        width: 100%;
-        height: 100%;
-    }
-    
-    section#video {
-        width: 100%;
-        grid-area: video;
-        height: 100%;
-    }
-    
-    section#calificacion {
-        grid-area: calificacion;
-        height: 100%;
-        width: 100%;
-        background: transparent;
-    }
-    
-    section#descripcion {
-        background: transparent;
-        margin: 0%;
-        grid-area: descripcion;
-        height: 100%;
-    }
-    
-    section#formulario {
-        background: transparent;
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        grid-area: formulario;
-        padding: 0%;
-    }
-    
-    #miCajaFija {
-        position: inherit;
-        padding: auto;
-        margin: 0%;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    section {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    section#dudas {
-        background: transparent;
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        grid-area: dudas;
-        display: flex;
-        justify-content: center;
-    }
-    /*fin de  grid en la pagina de compra*/
-    /* estilos de formularios*/
-    
-    .form-register {
-        width: 100%;
-        background: url(../imagenes/a.webp);
-        padding: 30px;
-        margin: 10% auto;
-        margin-top: 100px;
-        border-radius: 4px;
-        font-family: 'calibri';
-        color: white;
-        box-shadow: 7px 13px 37px #000;
-    }
-    
-    .form-register h4 {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-    
-    .controls {
-        width: 100%;
-        background: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: 'calibri';
-        font-size: 18px;
-        color: white;
-    }
-    
-    .form-register p {
-        height: 40px;
-        text-align: center;
-        font-size: 18px;
-        line-height: 40px;
-    }
-    
-    .form-register a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .form-register a:hover {
-        color: white;
-        text-decoration: underline;
-    }
-    
-    .form-register .botons {
-        width: 100%;
-        background: #1f53c5;
-        border: none;
-        padding: 12px;
-        color: white;
-        margin: 16px 0;
-        font-size: 16px;
-    }
-    /*fin de  estilos de formulario*/
-    /*caja de  historial*/
-    
-    .card {
-        margin: 1% 0;
-    }
-    
-    .card-body button.boto {
-        color: rgb(0, 0, 0);
-        justify-items: center;
-        width: auto;
-    }
-    .boto {
-        
-        color: #000000;
-        background: transparent;
-        border-radius: 30px;
-        width: 70px;
-        border: none;
-        margin: 5%;
-    }
-    
-    button.boto:hover {
-        color: rgb(255, 255, 255);
-        background: #1c53d2;
-    }
-    
-    .centrado {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: end;
-        justify-items: center;
-        flex-direction: column;
-    }
-    /*fin caja de historial*/
-    
-    tr.paciente td,
-    .estilizar th {
-        padding: .7em;
-        margin: 0;
-        border: 1px solid rgb(0, 0, 0);
-        text-align: center;
-    }
-    
-    tr.estilizar th {
-        font-weight: bold;
-        background-color: #EEE;
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .contenedor {
-        background: #326fff;
-    }
-    
-    .miFormula {
-        margin: 0%;
-        width: 100%;
-        height: 100%;
-        padding: 0%;
-    }
-    
-    .padre-cajita {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "cajita1 cajita2";
-        padding: 10px;
-        grid-gap: 5px;
-    }
-    
-    .cajita1 {
-        grid-area: cajita1;
-    }
-    
-    .cajita2 {
-        grid-area: cajita2;
-    }
-    
-    #miCajaFija {
-        width: 90%;
-    }     
+body {
+  margin: auto;
+  align-items: baseline;
+  font-family: sans-serif;
+  background: url(../imagenes/a.webp) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: calc(100vh);
+  padding: 0%;
+  width: 100%; }
 
+li {
+  margin: 0 1%; }
 
+.lupa {
+  border-radius: 35px;
+  background: white;
+  border: none;
+  color: #fe9900;
+  width: auto; }
 
-    /*animaciones  creadas para el proyecto y para precentar */
-    
-    .animat {
-        animation-name: animar;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 6s;
-        animation-delay: 2s;
-        width: 90%;
-        height: 10%;
-        margin: 0px 0;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        transition: 2s;
-        text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333); 
-        flex-direction: row;
+.logo img {
+  background: transparent;
+  border-radius: 100px; }
+
+/* fin nav botonera
+
+/* cambio en los logos  */
+.logo {
+  padding: 0px 0px;
+  align-items: center; }
+
+.box figure a img {
+  box-shadow: none; }
+
+.logo:hover,
+.box img:hover {
+  filter: invert(100%); }
+
+/*fin de cambios en los logos */
+.color-blanco {
+  color: white; }
+
+.submenu {
+  margin: 0;
+  background: linear-gradient(to top, white, #326fff);
+  display: flex;
+  justify-items: center center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  justify-content: center; }
+
+.submenu li a h2 {
+  font-size: 24px;
+  text-decoration: none; }
+
+.submenu li {
+  margin: 1%;
+  background-color: transparent;
+  position: sticky;
+  padding: 0% 1%;
+  font-size: 0px;
+  height: 100%;
+  text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333); }
+
+.submenu li:hover {
+  transform: translateY(-5px); }
+
+/* carrusel con bootstrap */
+#medida {
+  width: 90%;
+  height: 400px; }
+
+/* fin carrusel */
+/* articulos de  contenido  */
+section.contenido3 article {
+  position: relative;
+  margin: 5%;
+  display: inline-block; }
+
+article:hover {
+  background: #234da8; }
+
+article h2 {
+  font-size: 15px; }
+
+section form fieldset {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  align-items: center;
+  background: white; }
+
+.video iframe {
+  margin-top: 2%;
+  margin-bottom: 4%; }
+
+iframe {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto; }
+
+form fieldset.catalogo {
+  margin-top: 2%;
+  margin-bottom: 4%;
+  text-align: center;
+  align-items: center;
+  padding: 0%;
+  margin: 5% 10%;
+  text-align: center;
+  align-items: center;
+  position: relative; }
+
+form fieldset.catalogo legend h2 {
+  margin: 0;
+  width: 100%;
+  border-radius: 35%;
+  color: #000000; }
+
+form fieldset.catalogos legend h2 {
+  margin: 10%;
+  width: 100%; }
+
+form fieldset.catalogos {
+  margin-bottom: 40px; }
+
+.tabla {
+  background: #ffffff; }
+
+.tablaa {
+  margin: 30px;
+  background: #fff4f4; }
+
+section.tablaa h2 {
+  color: black; }
+
+.contener3 {
+  margin: 3%; }
+
+form fieldset {
+  margin: 3% 10%;
+  box-shadow: 0 5px 15px #2c2c2c; }
+
+form fieldset legend {
+  background: #0058fb;
+  width: 100%;
+  text-align: center;
+  margin: 2%; }
+
+section button {
+  position: relative;
+  float: left;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 30px; }
+
+section button.dos {
+  position: relative;
+  float: right;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 30px; }
+
+span p {
+  margin: 5%; }
+
+.boto {
+  color: #000000;
+  background: transparent;
+  border-radius: 30px;
+  width: 70px;
+  border: none;
+  margin: 5%; }
+
+.boto:hover {
+  color: white;
+  background: #1c53d2; }
+
+form.catal {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.margen {
+  margin: 50px; }
+
+.opaco {
+  opacity: 30%; }
+
+#masAnchos {
+  width: 100%;
+  margin: 0%;
+  padding: 0%; }
+
+option {
+  background: #2214c9; }
+
+img,
+video {
+  border-radius: 3%;
+  box-shadow: 0 5px 15px #252527; }
+
+section h2 {
+  color: #ffffff; }
+
+a:activo {
+  color: yellow; }
+
+input {
+  padding: 7px; }
+
+legend.centrar {
+  margin-left: 35%; }
+
+article.tamaño {
+  padding: 200px;
+  background: #f6e9e9;
+  color: #000000; }
+
+article.tamaño h2 {
+  color: white;
+  margin: 2%;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: url(/imagenes/fondoo.jpg); }
+
+article {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; }
+
+table.tablaContacto {
+  background: #6374c6; }
+
+table.tablaContacto tr.tablaTitulo {
+  margin: 0%;
+  padding: 0%; }
+
+table.tablaContacto {
+  border: white;
+  border-spacing: 15px;
+  background: #cecece;
+  width: 100%;
+  align-items: center;
+  text-align: center; }
+
+div.grid-padre {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "hijo1 hijo2" "hijo3 hijo3";
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  grid-gap: 10px; }
+
+div.hijos1 {
+  grid-area: hijo1; }
+
+div.hijos2 {
+  grid-area: hijo2; }
+
+div.hijos3 {
+  grid-area: hijo3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center; }
+
+.hijos3 {
+  grid-area: hijo3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center; }
+
+div.grid div {
+  margin: 2%; }
+
+.ayuda {
+  padding: 0%;
+  margin: 0% auto;
+  text-align: center;
+  align-items: center;
+  position: relative; }
+
+.ayuda legend {
+  padding: 0%;
+  margin: 3% 0%; }
+
+h2 {
+  margin: 30px 0px; }
+
+.tamañosLetra {
+  margin: 0%;
+  padding: 0%; }
+
+.compra {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%; }
+
+/*caja grid en compras   inicio*/
+div.misCompra {
+  margin: 0%;
+  display: grid;
+  grid-template-areas: "video video video" "descripcion descripcion formulario" "calificacion calificacion formulario" " dudas dudas  dudas";
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%; }
+
+section#video {
+  width: 100%;
+  grid-area: video;
+  height: 100%; }
+
+section#calificacion {
+  grid-area: calificacion;
+  height: 100%;
+  width: 100%;
+  background: transparent; }
+
+section#descripcion {
+  background: transparent;
+  margin: 0%;
+  grid-area: descripcion;
+  height: 100%; }
+
+section#formulario {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  grid-area: formulario;
+  padding: 0%; }
+
+#miCajaFija {
+  position: inherit;
+  padding: auto;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center; }
+
+section {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center; }
+
+section#dudas {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  grid-area: dudas;
+  display: flex;
+  justify-content: center; }
+
+/*fin de  grid en la pagina de compra*/
+/* estilos de formularios*/
+.form-register {
+  width: 100%;
+  background: url(../imagenes/a.webp);
+  padding: 30px;
+  margin: 10% auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000; }
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white; }
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px; }
+
+.form-register a {
+  color: white;
+  text-decoration: none; }
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline; }
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px; }
+
+/*fin de  estilos de formulario*/
+/*caja de  historial*/
+.card {
+  margin: 1% 0; }
+
+.card-body button.boto {
+  color: black;
+  justify-items: center;
+  width: auto; }
+
+.boto {
+  color: #000000;
+  background: transparent;
+  border-radius: 30px;
+  width: 70px;
+  border: none;
+  margin: 5%; }
+
+button.boto:hover {
+  color: white;
+  background: #1c53d2; }
+
+.centrado {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+  justify-items: center;
+  flex-direction: column; }
+
+/*fin caja de historial*/
+tr.paciente td,
+.estilizar th {
+  padding: .7em;
+  margin: 0;
+  border: 1px solid black;
+  text-align: center; }
+
+tr.estilizar th {
+  font-weight: bold;
+  background-color: #EEE; }
+
+.container {
+  display: flex;
+  justify-content: center; }
+
+.contenedor {
+  background: #326fff; }
+
+.miFormula {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 0%; }
+
+.padre-cajita {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "cajita1 cajita2";
+  padding: 10px;
+  grid-gap: 5px; }
+
+.cajita1 {
+  grid-area: cajita1; }
+
+.cajita2 {
+  grid-area: cajita2; }
+
+#miCajaFija {
+  width: 90%; }
+
+/*animaciones  creadas para el proyecto y para precentar */
+.animat {
+  width: 100%;
+  height: 250px;
+  animation-name: animar;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  transition: 2s;
+  text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333);
+  flex-direction: row; }
+
+@keyframes animar {
+  0% {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, #326fff 51%); }
+  20% {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, #326fff 37%); }
+  40% {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, #326fff 67%); }
+  60% {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, #326fff 48%); }
+  80% {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, #326fff 48%); }
+  100% {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, #326fff 26%); } }
+
+.animarCajas,
+.animarCajas4,
+.animarCajas3,
+.animarCajas2 {
+  width: 320px;
+  height: 200px;
+  margin: 90px;
+  animation-name: animarCajas;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(6, jump-none);
+  animation-duration: 6s;
+  animation-delay: 2s; }
+
+@keyframes animarCajas {
+  0% {
+    transform: translateX(-500%); }
+  5% {
+    transform: translateX(-450%); }
+  10% {
+    transform: translateX(-400%); }
+  15% {
+    transform: translateX(-350%); }
+  20% {
+    transform: translateX(-300%); }
+  25% {
+    transform: translateX(-250%); }
+  30% {
+    transform: translateX(-200%); }
+  35% {
+    transform: translateX(-150%); }
+  40% {
+    transform: translateX(-100%); }
+  45% {
+    transform: translateX(-50%); }
+  50% {
+    transform: translateX(-20%); }
+  55% {
+    transform: translateX(0%); }
+  58% {
+    transform: translateX(500%); }
+  60% {
+    transform: translateX(450%); }
+  65% {
+    transform: translateX(400%); }
+  70% {
+    transform: translateX(350%); }
+  75% {
+    transform: translateX(300%); }
+  80% {
+    transform: translateX(250%); }
+  85% {
+    transform: translateX(200%); }
+  90% {
+    transform: translateX(150%); }
+  94% {
+    transform: translateX(100%); }
+  98% {
+    transform: translateX(50%); }
+  99% {
+    transform: translateX(20%); }
+  100% {
+    transform: translateX(0%); } }
+
+/*
+{
+    animation-name: animarCajas2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+@keyframes animarCajas2 {
+    0% {
+        transform: rotate(5deg);
     }
-    
-    @keyframes animar {
-        0% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 51%);
-        }
-        20% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 37%);
-        }
-        40% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 67%);
-        }
-        60% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 48%);
-        }
-        80% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 48%);
-        }
-        100% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 26%);
-        }
+    20% {
+        transform: rotate(-5deg);
     }
-    
-    .animat div {
-        background: transparent;
-        margin: 0 2%
+    40% {
+        transform: rotate(5deg);
     }
-    
-    .animarCajas,
-    .animarCajas4,
-    .animarCajas3,
-    .animarCajas2 {
-        height: auto;
-        animation-name: animarCajas;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
-        animation-duration: 6s;
-        animation-delay: 2s;
-        overflow: hidden;
+    60% {
+        transform: rotate(-5deg);
     }
-    
-    @keyframes animarCajas {
-        0% {
-            transform: translateX(-500%);
-        }
-        5% {
-            transform: translateX(-450%);
-        }
-        10% {
-            transform: translateX(-400%);
-        }
-        15% {
-            transform: translateX(-350%);
-        }
-        20% {
-            transform: translateX(-300%);
-        }
-        25% {
-            transform: translateX(-250%);
-        }
-        30% {
-            transform: translateX(-200%);
-        }
-        35% {
-            transform: translateX(-150%);
-        }
-        40% {
-            transform: translateX(-100%);
-        }
-        45% {
-            transform: translateX(-50%);
-        }
-        50% {
-            transform: translateX(-20%);
-        }
-        55% {
-            transform: translateX(-0%);
-        }
-        58% {
-            transform: translateX(500%);
-        }
-        60% {
-            transform: translateX(450%);
-        }
-        65% {
-            transform: translateX(400%);
-        }
-        70% {
-            transform: translateX(350%);
-        }
-        75% {
-            transform: translateX(300%);
-        }
-        80% {
-            transform: translateX(250%);
-        }
-        85% {
-            transform: translateX(200%);
-        }
-        90% {
-            transform: translateX(150%);
-        }
-        94% {
-            transform: translateX(100%);
-        }
-        98% {
-            transform: translateX(50%);
-        }
-        99% {
-            transform: translateX(20%);
-        }
-        100% {
-            transform: translateX(0%);
-        }
+    80% {
+        transform: rotate(5deg);
     }
-    /*
-    {
-        animation-name: animarCajas2;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-duration: 6s;
-        animation-delay: 2s;
+    100% {
+        transform: rotate(-5deg);
     }
-    
-    @keyframes animarCajas2 {
-        0% {
-            transform: rotate(5deg);
-        }
-        20% {
-            transform: rotate(-5deg);
-        }
-        40% {
-            transform: rotate(5deg);
-        }
-        60% {
-            transform: rotate(-5deg);
-        }
-        80% {
-            transform: rotate(5deg);
-        }
-        100% {
-            transform: rotate(-5deg);
-        }
-        0% {
-            transform: rotate(5deg);
-        }
+    0% {
+        transform: rotate(5deg);
     }
-    
-    {
-        animation-name: animarCajas3;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-duration: 6s;
-        animation-delay: 2s;
+}
+
+{
+    animation-name: animarCajas3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+@keyframes animarCajas3 {
+    0% {
+        transform: scaley(1);
     }
-    
-    @keyframes animarCajas3 {
-        0% {
-            transform: scaley(1);
-        }
-        20% {
-            transform: scaley(-1);
-        }
-        40% {
-            transform: scaley(1);
-        }
-        60% {
-            transform: scaley(-1);
-        }
-        80% {
-            transform: scaley(1);
-        }
-        100% {
-            transform: scaley(-1);
-        }
-        0% {
-            transform: scaley(1);
-        }
+    20% {
+        transform: scaley(-1);
     }
-    
-    . {
-        animation-name: animarCajas4;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-duration: 6s;
-        animation-delay: 2s;
+    40% {
+        transform: scaley(1);
     }
-    
-    @keyframes animarCajas4 {
-        0% {
-            transform: skewX(11deg);
-        }
-        20% {
-            transform: skewX(-11deg);
-        }
-        40% {
-            transform: skewX(11deg);
-        }
-        60% {
-            transform: skewX(-11deg);
-        }
-        80% {
-            transform: skewX(11deg);
-        }
-        100% {
-            transform: skewX(-11deg);
-        }
-        0% {
-            transform: skewX(11deg);
-        }
+    60% {
+        transform: scaley(-1);
     }
-    */
-    
-    @media all and (max-width: 320px) {
-        div.misCompra {
-            position: flex;
-            margin: 0%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "video" "descripcion " "formulario" " calificacion "" dudas";
-            grid-gap: 10px;
-            width: 100%;
-            height: 100%;
-        }
-        #videos {
-            width: 100%;
-            margin: 0% 1%;
-            height: auto;
-        }
-        .contenedor {
-            width: 100%;
-            height: auto;
-            margin: 0%;
-        }
-        .ofertas {
-            width: 100%;
-            height: auto;
-        }
-        .submenu {
-            font-size: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-        }
-        div.grid-padre {
-            width: 100%;
-            display: flex;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: "hijo1" "hijo2""hijo3";
-            margin: 0;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            grid-gap: auto;
-            flex-direction: column;
-        }
-        .tablaContacto {
-            width: 100%;
-        }
-        .hijos3 {
-            width: 100%;
-            height: auto;
-            margin: 0 1%;
-        }
-        .hijos2 iframe {
-            width: 100%;
-            height: auto;
-            margin: 0 1%;
-        }
-        .hijos1 form {
-            width: 100%;
-            height: auto;
-            margin: 0 1%;
-        }
-        .menu-logo {
-            display: none;
-        }
-        .caja {
-            display: none;
-        }
-        .video video {
-            width: 100%;
-            height: 200px;
-        }
-        .contenido3 h2 {
-            font-size: 30px;
-            color: #000000;
-        }
-        .contenido3 p {
-            font-size: 40px;
-            color: #000000;
-        }
-        .piePagina .grupo1 {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: auto;
-            grid-gap: 5px;
-            padding: 5px 0px;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-        }
-        .box figure a img {
-            display: none;
-        }
-        .piePagina {
-            width: 100%;
-            height: auto;
-        }
-        .grid-padre {
-            display: flex;
-            flex-direction: column;
-        }
-        form {
-            clear: initial;
-            width: auto;
-            margin: 0%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            justify-items: auto;
-        }
-        .ayuda {
-            margin: 0% auto;
-        }
-        section {
-            flex-direction: column;
-            padding: auto;
-            margin: 0%;
-        }.padre-cajita {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "cajita1 ""cajita2";
-            padding: 10px;
-            grid-gap: 5px;
-        }
-        .cajita1 {
-            width: 100%;
-            grid-area: cajita1;
-        }
-        .cajita2 {
-            width: 100%;
-            grid-area: cajita2;
-        }
-        footer {
-            display: flex;
-            justify-content: center;
-            justify-items: auto;
-            flex-direction: column;
-        }
-        .animat {
-            display: none;
-        }
+    80% {
+        transform: scaley(1);
     }
-    
-    @media all and (max-width:600px) {
-        .submenu {
-            font-size: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-        }
-        div.misCompra {
-            position: flex;
-            margin: 0%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "video" "descripcion " "formulario" " calificacion "" dudas";
-            grid-gap: 10px;
-            width: 100%;
-            height: 100%;
-        }
-        .contenedor {
-            width: 100%;
-            height: auto;
-            margin: 0%;
-        }
-        #videos {
-            width: 100%;
-            margin: 0% 1%;
-            height: auto;
-        }
-        .logo img {
-            display: block;
-            height: 100%;
-            width: 15%;
-        }
-        .ofertas {
-            width: 100%;
-        }
-        .caja {
-            width: 100%;
-            height: 50px;
-            font-size: 20px;
-            line-height: 49px;
-            text-transform: uppercase;
-            margin: 30px auto;
-            color: #000000;
-            display: flex;
-            align-content: center;
-            align-items: stretch;
-            justify-content: center;
-        }
-        .lista li {
-            margin: 20px 0;
-        }
-        ul.lista {
-            list-style: none;
-            padding-left: 50px;
-            animation: cambiar 6s infinite;
-        }
-        @keyframes cambiar {
-            0% {
-                margin-top: 0;
-            }
-            20% {
-                margin-top: 0;
-            }
-            25% {
-                margin-top: -30px;
-            }
-            50% {
-                margin-top: -60px;
-            }
-            55% {
-                margin-top: -90px;
-            }
-            80% {
-                margin-top: -60px;
-            }
-            85% {
-                margin-top: -120px;
-            }
-            90% {
-                margin-top: -150px;
-            }
-            100% {
-                margin-top: 0;
-            }
-        }
-        .video video {
-            width: 100%;
-        }
-        .contenido3 h2 {
-            font-size: 50px;
-            color: #000000;
-        }
-        .contenido3 p {
-            font-size: 40px;
-            color: #000000;
-        }
-        .piePagina .grupo1 {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: auto;
-            grid-gap: 5px;
-            padding: 5px 0px;
-            text-align: center;
-            align-items: center;
-        }
-        .piePagina {
-            width: 100%;
-            height: auto;
-        }
-        form {
-            clear: initial;
-            width: auto;
-            margin: 0%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            justify-items: auto;
-        }
-        div.grid-padre {
-            width: 100%;
-            display: flex;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: "hijo1" "hijo2""hijo3";
-            margin: 0;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            grid-gap: auto;
-            flex-direction: column;
-        }
-        .tablaContacto {
-            width: 100%;
-        }
-        .hijos3 {
-            width: 100%;
-            height: auto;
-            margin: 0 1%;
-        }
-        .hijos2 iframe {
-            width: 100%;
-            height: auto;
-            margin: 0 1%;
-        }
-        .hijos1 form {
-            width: 100%;
-            height: auto;
-            margin: 0 1%;
-        }
-        .ayuda {
-            margin: 0% auto;
-        }
-        section {
-            flex-direction: column;
-            padding: auto;
-            margin: 0%;
-        }
-        .padre-cajita {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "cajita1 ""cajita2";
-            padding: 10px;
-            grid-gap: 5px;
-            justify-content: center;
-            align-items: center;
-        }
-        .cajita1 {
-            width: 100%;
-            grid-area: cajita1;
-        }
-        .cajita2 {
-            width: 100%;
-            grid-area: cajita2;
-        }
-        footer {
-            display: flex;
-            justify-content: center;
-            justify-items: auto;
-            flex-direction: column;
-        }
+    100% {
+        transform: scaley(-1);
     }
-    
-    @media all and (max-width:1000px) {
-        .submenu {
-            font-size: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-        }
-        .contenedor {
-            width: 100%;
-            height: auto;
-            margin: 0%;
-        }
-        .video video {
-            width: 100%;
-        }
-        div.misCompra {
-            position: flex;
-            margin: 0%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "video" "descripcion " "formulario" " calificacion "" dudas";
-            grid-gap: 10px;
-            width: 100%;
-            height: 100%;
-        }
-        #videos {
-            width: 100%;
-            margin: 0% 1%;
-            height: auto;
-        }
-        .contenido3 h2 {
-            font-size: 50px;
-            color: #000000;
-        }
-        .contenido3 p {
-            font-size: 40px;
-            color: #000000;
-        }
-        .piePagina .grupo1 {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 5px;
-            padding: 5px 0px;
-        }
-        .piePagina {
-            width: 100%;
-            height: auto;
-        }
-        form {
-            clear: initial;
-            width: auto;
-            margin: 0%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            justify-items: auto;
-        }
-        .ayuda {
-            margin: 0% auto;
-        }
-        section {
-            flex-direction: column;
-            padding: auto;
-            margin: 0%;
-        }
-        footer {
-            display: flex;
-            justify-content: center;
-            justify-items: auto;
-            flex-direction: column;
-        }
+    0% {
+        transform: scaley(1);
     }
+}
+
+. {
+    animation-name: animarCajas4;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+@keyframes animarCajas4 {
+    0% {
+        transform: skewX(11deg);
+    }
+    20% {
+        transform: skewX(-11deg);
+    }
+    40% {
+        transform: skewX(11deg);
+    }
+    60% {
+        transform: skewX(-11deg);
+    }
+    80% {
+        transform: skewX(11deg);
+    }
+    100% {
+        transform: skewX(-11deg);
+    }
+    0% {
+        transform: skewX(11deg);
+    }
+}
+*/
+/*:::::Pie de Pagina*/
+footer div {
+  background: #0b4e9f; }
+
+.piePagina {
+  width: 100%;
+  height: auto; }
+
+.piePagina .grupo1 {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo enlace redes";
+  grid-gap: 1%;
+  padding: 2px 0px;
+  align-content: center;
+  align-items: center; }
+
+.pie-1 {
+  align-content: center;
+  align-items: center;
+  grid-area: logo; }
+
+.pie-2 {
+  align-items: center;
+  text-align: center;
+  grid-area: enlace; }
+
+.pie-3 {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  grid-area: redes; }
+
+.piePagina .grupo1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.piePagina .grupo1 .box figure img {
+  width: 150px;
+  border-radius: 35px; }
+
+.piePagina .grupo1 .box h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none; }
+
+.piePagina .grupo1 .box p {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center; }
+
+.piePagina .grupo1 .redSocial a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff5f5;
+  margin-right: 10px;
+  background: transparent;
+  text-align: center;
+  align-items: center;
+  transition: all 300ms ease;
+  text-shadow: none;
+  border-radius: 25px; }
+
+.piePagina .grupo1 .redSocial a:hover {
+  color: #1500ff;
+  text-align: center;
+  align-items: center;
+  background: #0058fb;
+  border-radius: 25px;
+  box-shadow: none; }
+
+.piePagina .grupo2 {
+  background-color: #00316d;
+  padding: 1% 1%;
+  text-align: center;
+  align-items: center;
+  color: white; }
+
+.piePagina .grupo2 small {
+  font-size: 15px; }
+
+@media all and (max-width: 1000px) {
+  body {
+    margin: auto; }
+  .submenu {
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+  .contenedor {
+    width: 100%;
+    height: auto;
+    margin: 0%; }
+  .video video {
+    width: 100%; }
+  div.misCompra {
+    position: flex;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "video" "descripcion " "formulario" " calificacion " " dudas";
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%; }
+  #videos {
+    width: 100%;
+    margin: 0% 1%;
+    height: auto; }
+  .contenido3 h2 {
+    font-size: 50px;
+    color: #000000; }
+  .contenido3 p {
+    font-size: 40px;
+    color: #000000; }
+  .piePagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    padding: 5px 0px; }
+  .piePagina {
+    width: 100%;
+    height: auto; }
+  form {
+    clear: initial;
+    width: auto;
+    margin: 0%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: auto; }
+  .ayuda {
+    margin: 0% auto; }
+  section {
+    flex-direction: column;
+    padding: auto;
+    margin: 0%; }
+  footer {
+    display: flex;
+    justify-content: center;
+    justify-items: auto;
+    flex-direction: column; } }
+
+@media all and (max-width: 590px) {
+  .submenu {
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+  .menu-logo {
+    display: none; }
+  div.misCompra {
+    position: flex;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "video" "descripcion " "formulario" " calificacion " " dudas";
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%; }
+  .contenedor {
+    width: 100%;
+    height: auto;
+    margin: 0%; }
+  #videos {
+    width: 100%;
+    margin: 0% 1%;
+    height: auto; }
+  .logo img {
+    display: block;
+    height: 100%;
+    width: 15%; }
+  .ofertas {
+    width: 100%; }
+  .caja {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin: 30px auto;
+    color: #000000;
+    display: flex;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center; }
+  .lista li {
+    margin: 20px 0; }
+  ul.lista {
+    list-style: none;
+    padding-left: 50px;
+    animation: cambiar 6s infinite; }
+  @keyframes cambiar {
+    0% {
+      margin-top: 0; }
+    20% {
+      margin-top: 0; }
+    25% {
+      margin-top: -30px; }
+    50% {
+      margin-top: -60px; }
+    55% {
+      margin-top: -90px; }
+    80% {
+      margin-top: -60px; }
+    85% {
+      margin-top: -120px; }
+    90% {
+      margin-top: -150px; }
+    100% {
+      margin-top: 0; } }
+  .video video {
+    width: 100%; }
+  .contenido3 h2 {
+    font-size: 50px;
+    color: #000000; }
+  .contenido3 p {
+    font-size: 40px;
+    color: #000000; }
+  .piePagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo logo" "enlace redes";
+    grid-gap: 5px;
+    padding: 5px 0px; }
+  .piePagina {
+    width: 100%;
+    height: auto; }
+  form {
+    clear: initial;
+    width: auto;
+    margin: 0%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: auto; }
+  div.grid-padre {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "hijo1" "hijo2" "hijo3";
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-gap: auto;
+    flex-direction: column; }
+  .tablaContacto {
+    width: 100%; }
+  .hijos3 {
+    width: 100%;
+    height: auto;
+    margin: 0 1%; }
+  .hijos2 iframe {
+    width: 100%;
+    height: auto;
+    margin: 0 1%; }
+  .hijos1 form {
+    width: 100%;
+    height: auto;
+    margin: 0 1%; }
+  .ayuda {
+    margin: 0% auto; }
+  section {
+    flex-direction: column;
+    padding: auto;
+    margin: 0%; }
+  .padre-cajita {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cajita1 " "cajita2";
+    padding: 10px;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center; }
+  .cajita1 {
+    width: 100%;
+    grid-area: cajita1; }
+  .cajita2 {
+    width: 100%;
+    grid-area: cajita2; }
+  footer {
+    display: flex;
+    justify-content: center;
+    justify-items: auto;
+    flex-direction: column; }
+  .bg-transparent img {
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%; } }
+
+@media all and (max-width: 340px) {
+  div.misCompra {
+    position: flex;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "video" "descripcion " "formulario" " calificacion " " dudas";
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%; }
+  #videos {
+    width: 100%;
+    margin: 0% 1%;
+    height: auto; }
+  .contenedor {
+    width: 100%;
+    height: auto;
+    margin: 0%; }
+  .ofertas {
+    width: 100%;
+    height: auto; }
+  .submenu {
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+  div.grid-padre {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "hijo1" "hijo2" "hijo3";
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-gap: auto;
+    flex-direction: column; }
+  .tablaContacto {
+    width: 100%; }
+  .hijos3 {
+    width: 100%;
+    height: auto;
+    margin: 0 1%; }
+  .hijos2 iframe {
+    width: 100%;
+    height: auto;
+    margin: 0 1%; }
+  .hijos1 form {
+    width: 100%;
+    height: auto;
+    margin: 0 1%; }
+  .menu-logo {
+    display: none; }
+  .caja {
+    display: none; }
+  .video video {
+    width: 100%;
+    height: 200px; }
+  .contenido3 h2 {
+    font-size: 30px;
+    color: #000000; }
+  .contenido3 p {
+    font-size: 40px;
+    color: #000000; }
+  .piePagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  1fr 1fr;
+    grid-template-areas: "logo" "enlace" "redes";
+    grid-gap: 5px;
+    padding: 5px 0px; }
+  .piePagina {
+    width: 100%;
+    height: auto; }
+  .grid-padre {
+    display: flex;
+    flex-direction: column; }
+  form {
+    clear: initial;
+    width: auto;
+    margin: 0%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: auto; }
+  .ayuda {
+    margin: 0% auto; }
+  section {
+    flex-direction: column;
+    padding: auto;
+    margin: 0%; }
+  .padre-cajita {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cajita1 " "cajita2";
+    padding: 10px;
+    grid-gap: 5px; }
+  .redSociales {
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+  .cajita1 {
+    width: 100%;
+    grid-area: cajita1; }
+  .cajita2 {
+    width: 100%;
+    grid-area: cajita2; }
+  footer {
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+  .bg-transparent img {
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90%; } }

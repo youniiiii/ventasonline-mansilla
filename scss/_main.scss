@@ -1,0 +1,759 @@
+@import "-variables";
+/* carrusel con bootstrap */
+
+#medida {
+    width: 90%;
+    height: 400px;
+}
+/* fin carrusel */
+
+/* articulos de  contenido  */
+
+section.contenido3 article {
+    position: relative;
+    margin: 5%;
+    display: inline-block;
+}
+
+article:hover {
+    background: rgb(35, 77, 168);
+}
+
+article h2 {
+    font-size: 15px;
+}
+
+section form fieldset {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    align-items: center;
+    background: white;
+}
+
+.video iframe {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+iframe {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+form fieldset.catalogo {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+    align-items: center;
+    padding: 0%;
+    margin: 5% 10%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+form fieldset.catalogo legend h2 {
+    margin: 0;
+    width: 100%;
+    border-radius: 35%;
+    color: #000000;
+}
+
+form fieldset.catalogos legend h2 {
+    margin: 10%;
+    width: 100%;
+}
+
+form fieldset.catalogos {
+    margin-bottom: 40px;
+}
+
+.tabla {
+    background: #ffffff;
+}
+
+.tablaa {
+    margin: 30px;
+    background: #fff4f4;
+}
+
+section.tablaa h2 {
+    color: black;
+}
+
+.contener3 {
+    margin: 3%;
+}
+
+form fieldset {
+    margin: 3% 10%;
+    box-shadow: 0 5px 15px rgb(44, 44, 44);
+}
+
+form fieldset legend {
+    background: #0058fb;
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+}
+
+section button {
+    position: relative;
+    float: left;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+section button.dos {
+    position: relative;
+    float: right;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+span p {
+    margin: 5%;
+}
+    
+.boto {
+    
+    color: #000000;
+    background: transparent;
+    border-radius: 30px;
+    width: 70px;
+    border: none;
+    margin: 5%;
+}
+
+.boto:hover {
+    color: rgb(255, 255, 255);
+    background: #1c53d2;
+}
+
+form.catal {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.margen {
+    margin: 50px;
+}
+
+.opaco {
+    opacity: 30%;
+}
+
+#masAnchos {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+option {
+    background: #2214c9;
+}
+
+img,
+video {
+    border-radius: 3%;
+    box-shadow: 0 5px 15px rgb(37, 37, 39);
+}
+
+section h2 {
+    color: #ffffff;
+}
+
+a:activo {
+    color: yellow;
+}
+
+input {
+    padding: 7px;
+}
+
+legend.centrar {
+    margin-left: 35%;
+}
+
+article.tamaño {
+    padding: 200px;
+    background: #f6e9e9;
+    color: #000000;
+}
+
+article.tamaño h2 {
+    color: rgb(255, 255, 255);
+    margin: 2%;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: url(/imagenes/fondoo.jpg);
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+table.tablaContacto {
+    background: rgb(99, 116, 198);
+}
+
+table.tablaContacto tr.tablaTitulo {
+    margin: 0%;
+    padding: 0%;
+}
+
+table.tablaContacto {
+    border: rgb(255, 255, 255);
+    border-spacing: 15px;
+    background: rgb(206, 206, 206);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+div.grid-padre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "hijo1 hijo2" "hijo3 hijo3";
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+div.hijos1 {
+    grid-area: hijo1;
+}
+
+div.hijos2 {
+    grid-area: hijo2;
+}
+
+div.hijos3 {
+    grid-area: hijo3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.hijos3 {
+    grid-area: hijo3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+div.grid div {
+    margin: 2%;
+}
+
+.ayuda {
+    padding: 0%;
+    margin: 0% auto;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.ayuda legend {
+    padding: 0%;
+    margin: 3% 0%;
+}
+
+h2 {
+    margin: 30px 0px;
+}
+
+.tamañosLetra {
+    margin: 0%;
+    padding: 0%;
+}
+
+.compra {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+/*caja grid en compras   inicio*/
+
+div.misCompra {
+    margin: 0%;
+    display: grid;
+    grid-template-areas: "video video video" "descripcion descripcion formulario""calificacion calificacion formulario"" dudas dudas  dudas";
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+section#video {
+    width: 100%;
+    grid-area: video;
+    height: 100%;
+}
+
+section#calificacion {
+    grid-area: calificacion;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+section#descripcion {
+    background: transparent;
+    margin: 0%;
+    grid-area: descripcion;
+    height: 100%;
+}
+
+section#formulario {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    grid-area: formulario;
+    padding: 0%;
+}
+
+#miCajaFija {
+    position: inherit;
+    padding: auto;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+section#dudas {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    grid-area: dudas;
+    display: flex;
+    justify-content: center;
+}
+/*fin de  grid en la pagina de compra*/
+/* estilos de formularios*/
+
+.form-register {
+    width: 100%;
+    background: url(../imagenes/a.webp);
+    padding: 30px;
+    margin: 10% auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+/*fin de  estilos de formulario*/
+/*caja de  historial*/
+
+.card {
+    margin: 1% 0;
+}
+
+.card-body button.boto {
+    color: rgb(0, 0, 0);
+    justify-items: center;
+    width: auto;
+}
+.boto {
+    
+    color: #000000;
+    background: transparent;
+    border-radius: 30px;
+    width: 70px;
+    border: none;
+    margin: 5%;
+}
+
+button.boto:hover {
+    color: rgb(255, 255, 255);
+    background: #1c53d2;
+}
+
+.centrado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    justify-items: center;
+    flex-direction: column;
+}
+/*fin caja de historial*/
+
+tr.paciente td,
+.estilizar th {
+    padding: .7em;
+    margin: 0;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+tr.estilizar th {
+    font-weight: bold;
+    background-color: #EEE;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    background: #326fff;
+}
+
+.miFormula {
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+
+.padre-cajita {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cajita1 cajita2";
+    padding: 10px;
+    grid-gap: 5px;
+}
+
+.cajita1 {
+    grid-area: cajita1;
+}
+
+.cajita2 {
+    grid-area: cajita2;
+}
+
+#miCajaFija {
+    width: 90%;
+}     
+
+
+
+/*animaciones  creadas para el proyecto y para precentar */
+
+.animat {
+    width:100%;
+    height:250px;
+    animation-name: animar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    transition: 2s;
+    text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333); 
+    flex-direction: row;
+}
+
+@keyframes animar {
+    0% {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 51%);
+    }
+    20% {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 37%);
+    }
+    40% {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 67%);
+    }
+    60% {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 48%);
+    }
+    80% {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 48%);
+    }
+    100% {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(50, 111, 255, 1) 26%);
+    }
+}
+
+
+.animarCajas,
+.animarCajas4,
+.animarCajas3,
+.animarCajas2 { 
+    width:320px;
+    height:200px;
+     margin:90px;
+    animation-name: animarCajas;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6,jump-none) ;
+    animation-duration: 6s;
+    animation-delay: 2s; 
+}
+
+@keyframes animarCajas {
+    0% {
+       
+        transform: translateX(-500%);
+    }
+    5% { 
+        transform: translateX(-450%);
+    }
+    10% { 
+        transform: translateX(-400%);
+    }
+    15% { 
+        transform: translateX(-350%);
+    }
+    20% { 
+        transform: translateX(-300%);
+    }
+    25% {
+        transform: translateX(-250%);
+    }
+    30% { 
+        transform: translateX(-200%);
+    }
+    35% { 
+        transform: translateX(-150%);
+    }
+    40% { 
+        transform: translateX(-100%);
+    }
+    45% { 
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+    55% {
+        transform: translateX(-0%);
+    }
+    58% { 
+        transform: translateX(500%);
+    }
+    60% { 
+        transform: translateX(450%);
+    }
+    65% { 
+        transform: translateX(400%);
+    }
+    70% { 
+        transform: translateX(350%);
+    }
+    75% { 
+        transform: translateX(300%);
+    }
+    80% {
+        transform: translateX(250%);
+    }
+    85% { 
+        transform: translateX(200%);
+    }
+    90% { 
+        transform: translateX(150%);
+    }
+    94% { 
+        transform: translateX(100%);
+    }
+    98% { 
+        transform: translateX(50%);
+    }
+    99% { 
+        transform: translateX(20%);
+    }
+    100% { 
+        transform: translateX(0%);
+    }
+}
+/*
+{
+    animation-name: animarCajas2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+@keyframes animarCajas2 {
+    0% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    40% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+    0% {
+        transform: rotate(5deg);
+    }
+}
+
+{
+    animation-name: animarCajas3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+@keyframes animarCajas3 {
+    0% {
+        transform: scaley(1);
+    }
+    20% {
+        transform: scaley(-1);
+    }
+    40% {
+        transform: scaley(1);
+    }
+    60% {
+        transform: scaley(-1);
+    }
+    80% {
+        transform: scaley(1);
+    }
+    100% {
+        transform: scaley(-1);
+    }
+    0% {
+        transform: scaley(1);
+    }
+}
+
+. {
+    animation-name: animarCajas4;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+@keyframes animarCajas4 {
+    0% {
+        transform: skewX(11deg);
+    }
+    20% {
+        transform: skewX(-11deg);
+    }
+    40% {
+        transform: skewX(11deg);
+    }
+    60% {
+        transform: skewX(-11deg);
+    }
+    80% {
+        transform: skewX(11deg);
+    }
+    100% {
+        transform: skewX(-11deg);
+    }
+    0% {
+        transform: skewX(11deg);
+    }
+}
+*/
+

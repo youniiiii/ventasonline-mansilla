@@ -1,11 +1,6 @@
 @import "-variables";
 /*:::::Pie de Pagina*/
 
-footer div { 
-    background:#0b4e9f;
-    
-   
-}
 
 .piePagina {
     width: 100%;
@@ -92,17 +87,18 @@ footer div {
 }
 
 .piePagina .grupo1 .redSocial a:hover {
-    color: #1500ff;
+    color: #000000;
     text-align: center;
     align-items: center;
-    background: #0058fb;
+    background: #373737;
     border-radius: 25px;
     box-shadow: none;
 }
 
 .piePagina .grupo2 {
-    background-color: #00316d;
+    background-color: #000000;
     padding: 1% 1%;
+    font-family: $letraclasica;
     text-align: center;
     align-items: center;
     color: rgb(255, 255, 255);
@@ -110,5 +106,6 @@ footer div {
 
 .piePagina .grupo2 small {
     font-size: 15px;
+    font-stretch: normal;
 }
 

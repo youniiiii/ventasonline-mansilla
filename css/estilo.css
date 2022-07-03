@@ -10,6 +10,10 @@
   text-decoration: none;
   color: #ffffff; }
 
+a {
+  text-decoration: none;
+  box-shadow: none; }
+
 body {
   margin: auto;
   background: url(../imagenes/fondonegro.webp) no-repeat;
@@ -55,6 +59,7 @@ li {
   color: #ffffff; }
 
 .submenu {
+  box-shadow: none;
   margin: 0;
   background: linear-gradient(to top, darkgray, #000000);
   display: flex;
@@ -65,8 +70,11 @@ li {
   justify-content: center; }
 
 .submenu li a h2 {
-  font-size: 24px;
-  text-decoration: none; }
+  font-size: 17px;
+  text-decoration: none;
+  box-shadow: none;
+  color: #ffffff;
+  text-transform: uppercase; }
 
 .submenu li {
   margin: 1%;
@@ -75,7 +83,10 @@ li {
   padding: 0% 1%;
   font-size: 0px;
   height: 100%;
+  box-shadow: none;
   text-shadow: 4px 4px 5px rgba(178, 178, 178, 0.333); }
+  .submenu li a {
+    box-shadow: none; }
 
 .submenu li:hover {
   transform: translateY(-5px); }
@@ -397,6 +408,11 @@ section#dudas {
 
 /*fin de  grid en la pagina de compra*/
 /* estilos de formularios*/
+.botons {
+  background: #000;
+  color: #f6e9e9;
+  border-radius: 35px; }
+
 .form-register {
   width: 70%;
   background: linear-gradient(to top, black 50%, #8d8d8d);
@@ -476,7 +492,7 @@ section#dudas {
   border: 1px solid white;
   margin: auto;
   color: #ffffff;
-  background: transparent;
+  background: black;
   width: 70px;
   border-top-left-radius: 0;
   border-top-right-radius: 35px;
@@ -487,7 +503,7 @@ section#dudas {
   border: 1px solid white;
   margin: auto 4px;
   color: #ffffff;
-  background: transparent;
+  background: black;
   width: 70px;
   border-radius: 35px;
   border-top-left-radius: 35px;
@@ -670,6 +686,40 @@ tr.estilizar th {
   100% {
     transform: translateX(0%); } }
 
+.mi-contenido {
+  width: 50%;
+  height: 300px;
+  display: inline-flex;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 10px;
+  border: 1px solid white;
+  padding: 0%;
+  border-radius: 35px;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 5%; }
+
+.mi-grupo1 {
+  text-align: center;
+  width: 100%;
+  align-content: space-between; }
+  .mi-grupo1 strong {
+    color: darkgreen;
+    text-transform: uppercase;
+    padding: 10%; }
+  .mi-grupo1 p {
+    overflow: hidden;
+    padding: 5%; }
+
+.mi-grupo2 {
+  align-items: center;
+  align-content: center; }
+  .mi-grupo2 img {
+    width: 250px;
+    height: 300px;
+    background-size: cover; }
+
 /*
 {
     animation-name: animarCajas2;
@@ -820,13 +870,16 @@ tr.estilizar th {
   font-size: 20px;
   text-align: center;
   align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  box-shadow: none; }
 
 .piePagina .grupo1 .box p {
   color: white;
   margin-bottom: 10px;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none;
+  box-shadow: none; }
 
 .piePagina .grupo1 .redSocial a {
   display: inline-block;
@@ -841,7 +894,8 @@ tr.estilizar th {
   align-items: center;
   transition: all 300ms ease;
   text-shadow: none;
-  border-radius: 25px; }
+  border-radius: 25px;
+  box-shadow: none; }
 
 .piePagina .grupo1 .redSocial a:hover {
   color: #000000;

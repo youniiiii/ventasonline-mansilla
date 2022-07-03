@@ -1,702 +1,769 @@
-    @import "-variables";
-    /* carrusel con bootstrap */
-    
-    #medida {
-        width: 90%;
-        height: 400px;
-    }
-    /* fin carrusel */
-    /* articulos de  contenido  */
-    
-    section.contenido3 article {
-        position: relative;
-        margin: 5%;
-        display: inline-block;
-    }
-    
-    article:hover {
-        background: rgb(35, 77, 168);
-    }
-    
-    article h2 {
-        font-size: 15px;
-    }
-    
-    section form fieldset {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        border: none;
-        align-items: center;
-        background: white;
-    }
-    
-    .video iframe {
-        margin-top: 2%;
-        margin-bottom: 4%;
-    }
-    
-    iframe {
-        width: 90%;
-        height: 300px;
-        margin: 0 auto;
-    }
-    
-    form fieldset.catalogo {
-        margin-top: 2%;
-        margin-bottom: 4%;
-        text-align: center;
-        align-items: center;
-        padding: 0%;
-        margin: 5% 10%;
-        text-align: center;
-        align-items: center;
-        position: relative;
-    }
-    
-    form fieldset.catalogo legend h2 {
-        margin: 0;
+@import "-variables";
+
+/* carrusel con bootstrap */
+
+#medida {
+    width: 90%;
+    height: 400px;
+}
+
+
+/* fin carrusel */
+
+
+/* articulos de  contenido  */
+
+section.contenido3 article {
+    position: relative;
+    margin: 5%;
+    display: inline-block;
+}
+
+article:hover {
+    background: rgb(35, 77, 168);
+}
+
+article h2 {
+    font-size: 15px;
+}
+
+section form fieldset {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    align-items: center;
+    background: white;
+}
+
+.video iframe {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+iframe {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+form fieldset.catalogo {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+    align-items: center;
+    padding: 0%;
+    margin: 5% 10%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+form fieldset.catalogo legend h2 {
+    margin: 0;
+    width: 100%;
+    border-radius: 35%;
+    color: #000000;
+}
+
+form fieldset.catalogos legend h2 {
+    margin: 10%;
+    width: 100%;
+}
+
+form fieldset.catalogos {
+    margin-bottom: 40px;
+}
+
+.tabla {
+    background: #ffffff;
+}
+
+section.tablaa h2 {
+    color: black;
+}
+
+.contener3 {
+    margin: 3%;
+}
+
+form fieldset {
+    margin: 3% 10%;
+    box-shadow: 0 5px 15px rgb(44, 44, 44);
+}
+
+form fieldset legend {
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+    color: #EEE;
+}
+
+section button {
+    position: relative;
+    float: left;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+section button.dos {
+    position: relative;
+    float: right;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+span p {
+    margin: 5%;
+}
+
+.boto {
+    color: #000000;
+    background: transparent;
+    border-radius: 30px;
+    width: 70px;
+    border: none;
+    margin: 5%;
+}
+
+.boto:hover {
+    color: rgb(255, 255, 255);
+    background: #000000;
+}
+
+form.catal {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.margen {
+    margin: 50px;
+}
+
+.opaco {
+    opacity: 30%;
+}
+
+#masAnchos {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+option {
+    color: #EEE;
+    transition: 2s;
+    background: black;
+}
+
+img,
+video {
+    width: 90%;
+    border-radius: 3%;
+}
+
+section h2 {
+    color: #ffffff;
+}
+
+a:activo {
+    color: yellow;
+}
+
+input {
+    padding: 7px;
+}
+
+legend.centrar {
+    margin-left: 35%;
+}
+
+article.tamaño {
+    padding: 200px;
+    background: #f6e9e9;
+    color: #000000;
+}
+
+article.tamaño h2 {
+    color: rgb(255, 255, 255);
+    margin: 2%;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: url(/imagenes/fondoo.jpg);
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+table.tablaContacto {
+    background: rgb(0, 0, 0);
+    color: #EEE;
+}
+
+table.tablaContacto tr.tablaTitulo {
+    margin: 0%;
+    padding: 0%;
+}
+
+table.tablaContacto {
+    border: rgb(255, 255, 255);
+    border-spacing: 15px;
+    background: rgb(206, 206, 206);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+div.grid-padre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "hijo1 hijo2""hijo3 hijo3";
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+div.hijos1 {
+    grid-area: hijo1;
+}
+
+div.hijos2 {
+    grid-area: hijo2;
+}
+
+div.hijos3 {
+    grid-area: hijo3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.hijos3 {
+    grid-area: hijo3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+div.grid div {
+    margin: 2%;
+}
+
+.ayuda {
+    padding: 0%;
+    margin: 0% auto;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.ayuda legend {
+    padding: 0%;
+    margin: 3% 0%;
+}
+
+h2 {
+    margin: 30px 0px;
+}
+
+.tamañosLetra {
+    margin: 0%;
+    padding: 0%;
+}
+
+.compra {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*caja grid en compras   inicio*/
+
+div.misCompra {
+    margin: 0%;
+    display: grid;
+    grid-template-areas: "video video video""descripcion descripcion formulario""calificacion calificacion formulario"" dudas dudas  dudas";
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+section#video {
+    width: 100%;
+    grid-area: video;
+    height: 100%;
+}
+
+section#calificacion {
+    grid-area: calificacion;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+section#descripcion {
+    background: transparent;
+    margin: 0%;
+    grid-area: descripcion;
+    height: 100%;
+}
+
+section#formulario {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    grid-area: formulario;
+    padding: 0%;
+}
+
+#miCajaFija {
+    position: inherit;
+    padding: auto;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+section#dudas {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    grid-area: dudas;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*fin de  grid en la pagina de compra*/
+
+
+/* estilos de formularios*/
+
+.botons {
+    background: #000;
+    color: #f6e9e9;
+    border-radius: 35px;
+}
+
+.form-register {
+    width: 70%;
+    @include gradientLine(top, rgb(0, 0, 0)50%, rgb(141, 141, 141));
+    padding: 30px;
+    margin: 10% auto;
+    margin-top: 50px;
+    border-radius: 14px;
+    color: white;
+    box-shadow: 7px 13px 37px rgb(234, 234, 234);
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    background: #000;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    color: #EEE;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #9d9d9d;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    background: #000;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    text-align: center;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: rgb(208, 208, 208);
+    text-decoration: underline;
+}
+
+
+/*fin de  estilos de formulario*/
+
+
+/*caja de  historial*/
+
+.card {
+    margin: 5% 0;
+    width: auto;
+    height: auto;
+}
+
+.card-body {
+    color: white;
+    background: #000;
+}
+
+.card-body button.boto {
+    color: rgb(255, 255, 255);
+    background: #000;
+    justify-items: center;
+    border: 1px solid white;
+}
+
+.card-precio {
+    padding: 2%;
+    color: white;
+    border-radius: 35px;
+    background: #000;
+}
+
+.card-precio:hover {
+    color: #000;
+    background: white;
+}
+
+.botos {
+    border: 1px solid white;
+    margin: auto;
+    color: #ffffff;
+    background: black;
+    width: 70px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 0;
+}
+
+.boto {
+    border: 1px solid white;
+    margin: auto 4px;
+    color: #ffffff;
+    background: black;
+    width: 70px;
+    border-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 35px;
+}
+
+button.boto:hover,
+.boto:hover {
+    transform: translateY(-.5em);
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+}
+
+button.botos:hover,
+.botos:hover {
+    transform: translateY(-.5em);
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+}
+
+.centrado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    justify-items: center;
+    flex-direction: column;
+}
+
+
+/*fin caja de historial*/
+
+tr.paciente td,
+.estilizar th {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    text-align: center;
+}
+
+tr.estilizar th {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    color: map-get($colores, letras);
+    border-radius: 35px;
+    @include gradientLine(top, rgb(0, 0, 0)50%, rgb(141, 141, 141));
+    box-shadow: 7px 7px 7px linen;
+}
+
+.miFormula {
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+
+.padre-cajita {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cajita1 cajita2";
+    padding: 10px;
+    grid-gap: 5px;
+}
+
+.cajita1 {
+    grid-area: cajita1;
+}
+
+.cajita2 {
+    grid-area: cajita2;
+}
+
+#miCajaFija {
+    width: 90%;
+}
+
+
+/*animaciones  creadas para el proyecto y para precentar */
+
+.animat {
+    width: 100%;
+    height: 250px;
+    animation-name: animar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    transition: 2s;
+    text-shadow: 4px 4px 5px rgba(206, 206, 206, 0.333);
+    flex-direction: row;
+}
+
+@keyframes animar {
+    0% {
         width: 100%;
-        border-radius: 35%;
-        color: #000000;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(83, 83, 83) 51%);
     }
-    
-    form fieldset.catalogos legend h2 {
-        margin: 10%;
+    20% {
         width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(108, 108, 108) 37%);
     }
-    
-    form fieldset.catalogos {
-        margin-bottom: 40px;
-    }
-    
-    .tabla {
-        background: #ffffff;
-    }
-    
-    section.tablaa h2 {
-        color: black;
-    }
-    
-    .contener3 {
-        margin: 3%;
-    }
-    
-    form fieldset {
-        margin: 3% 10%;
-        box-shadow: 0 5px 15px rgb(44, 44, 44);
-    }
-    
-    form fieldset legend {
-        background: transparent;
+    40% {
         width: 100%;
-        text-align: center;
-        margin: 2%;
-        color: #EEE;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(77, 77, 77) 67%);
     }
-    
-    section button {
-        position: relative;
-        float: left;
-        background: #000000;
-        color: #ffffff;
-        border-radius: 30px;
-    }
-    
-    section button.dos {
-        position: relative;
-        float: right;
-        background: #000000;
-        color: #ffffff;
-        border-radius: 30px;
-    }
-    
-    span p {
-        margin: 5%;
-    }
-    
-    .boto {
-        color: #000000;
-        background: transparent;
-        border-radius: 30px;
-        width: 70px;
-        border: none;
-        margin: 5%;
-    }
-    
-    .boto:hover {
-        color: rgb(255, 255, 255);
-        background: #000000;
-    }
-    
-    form.catal {
-        height: 100%;
+    60% {
         width: 100%;
-        margin: 0;
-        padding: 0;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(66, 66, 66) 48%);
     }
-    
-    .margen {
-        margin: 50px;
-    }
-    
-    .opaco {
-        opacity: 30%;
-    }
-    
-    #masAnchos {
+    80% {
         width: 100%;
-        margin: 0%;
-        padding: 0%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(99, 99, 99) 48%);
     }
-    
-    option {
-        color: #EEE;
-        transition: 2s;
-        background: black;
+    100% {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(92, 92, 92) 26%);
     }
-    
-    img,
-    video {
-        width: 90%;
-        border-radius: 3%;
+}
+
+.animarCajas,
+.animarCajas4,
+.animarCajas3,
+.animarCajas2 {
+    width: 320px;
+    height: 200px;
+    margin: 90px;
+    animation-name: animarCajas;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6, jump-none);
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+@keyframes animarCajas {
+    0% {
+        transform: translateX(-500%);
     }
-    
-    section h2 {
-        color: #ffffff;
+    5% {
+        transform: translateX(-450%);
     }
-    
-    a:activo {
-        color: yellow;
+    10% {
+        transform: translateX(-400%);
     }
-    
-    input {
-        padding: 7px;
+    15% {
+        transform: translateX(-350%);
     }
-    
-    legend.centrar {
-        margin-left: 35%;
+    20% {
+        transform: translateX(-300%);
     }
-    
-    article.tamaño {
-        padding: 200px;
-        background: #f6e9e9;
-        color: #000000;
+    25% {
+        transform: translateX(-250%);
     }
-    
-    article.tamaño h2 {
-        color: rgb(255, 255, 255);
-        margin: 2%;
-        font-size: 20px;
+    30% {
+        transform: translateX(-200%);
+    }
+    35% {
+        transform: translateX(-150%);
+    }
+    40% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+    55% {
+        transform: translateX(-0%);
+    }
+    58% {
+        transform: translateX(500%);
+    }
+    60% {
+        transform: translateX(450%);
+    }
+    65% {
+        transform: translateX(400%);
+    }
+    70% {
+        transform: translateX(350%);
+    }
+    75% {
+        transform: translateX(300%);
+    }
+    80% {
+        transform: translateX(250%);
+    }
+    85% {
+        transform: translateX(200%);
+    }
+    90% {
+        transform: translateX(150%);
+    }
+    94% {
+        transform: translateX(100%);
+    }
+    98% {
+        transform: translateX(50%);
+    }
+    99% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.mi-contenido {
+    width: 50%;
+    height: 300px;
+    display: inline-flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 10px;
+    border: 1px solid white;
+    padding: 0%;
+    border-radius: 35px;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.mi-grupo1 {
+    text-align: center;
+    width: 100%;
+    align-content: space-between;
+    strong {
+        color: darkgreen;
         text-transform: uppercase;
-        background: url(/imagenes/fondoo.jpg);
+        padding: 10%;
     }
-    
-    article {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
-    }
-    
-    table.tablaContacto {
-        background: rgb(0, 0, 0);
-        color: #EEE;
-    }
-    
-    table.tablaContacto tr.tablaTitulo {
-        margin: 0%;
-        padding: 0%;
-    }
-    
-    table.tablaContacto {
-        border: rgb(255, 255, 255);
-        border-spacing: 15px;
-        background: rgb(206, 206, 206);
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    
-    div.grid-padre {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "hijo1 hijo2""hijo3 hijo3";
-        margin: auto;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        grid-gap: 10px;
-    }
-    
-    div.hijos1 {
-        grid-area: hijo1;
-    }
-    
-    div.hijos2 {
-        grid-area: hijo2;
-    }
-    
-    div.hijos3 {
-        grid-area: hijo3;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    
-    .hijos3 {
-        grid-area: hijo3;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    
-    div.grid div {
-        margin: 2%;
-    }
-    
-    .ayuda {
-        padding: 0%;
-        margin: 0% auto;
-        text-align: center;
-        align-items: center;
-        position: relative;
-    }
-    
-    .ayuda legend {
-        padding: 0%;
-        margin: 3% 0%;
-    }
-    
-    h2 {
-        margin: 30px 0px;
-    }
-    
-    .tamañosLetra {
-        margin: 0%;
-        padding: 0%;
-    }
-    
-    .compra {
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-    }
-    /*caja grid en compras   inicio*/
-    
-    div.misCompra {
-        margin: 0%;
-        display: grid;
-        grid-template-areas: "video video video""descripcion descripcion formulario""calificacion calificacion formulario"" dudas dudas  dudas";
-        grid-gap: 10px;
-        width: 100%;
-        height: 100%;
-    }
-    
-    section#video {
-        width: 100%;
-        grid-area: video;
-        height: 100%;
-    }
-    
-    section#calificacion {
-        grid-area: calificacion;
-        height: 100%;
-        width: 100%;
-        background: transparent;
-    }
-    
-    section#descripcion {
-        background: transparent;
-        margin: 0%;
-        grid-area: descripcion;
-        height: 100%;
-    }
-    
-    section#formulario {
-        background: transparent;
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        grid-area: formulario;
-        padding: 0%;
-    }
-    
-    #miCajaFija {
-        position: inherit;
-        padding: auto;
-        margin: 0%;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    section {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    section#dudas {
-        background: transparent;
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        grid-area: dudas;
-        display: flex;
-        justify-content: center;
-    }
-    /*fin de  grid en la pagina de compra*/
-    /* estilos de formularios*/
-    
-    .form-register {
-        width: 70%;
-        @include gradientLine(top, rgb(0, 0, 0)50%, rgb(141, 141, 141));
-        padding: 30px;
-        margin: 10% auto;
-        margin-top: 50px;
-        border-radius: 14px;
-        color: white;
-        box-shadow: 7px 13px 37px rgb(234, 234, 234);
-    }
-    
-    .form-register h4 {
-        font-size: 22px;
-        margin-bottom: 20px;
-        text-align: center;
-        justify-content: center;
-        background: #000;
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
-        color: #EEE;
-    }
-    
-    .controls {
-        width: 100%;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #9d9d9d;
-        font-family: 'calibri';
-        font-size: 18px;
-        color: white;
-        background: #000;
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
-        text-align: center;
-    }
-    
-    .form-register p {
-        height: 40px;
-        text-align: center;
-        font-size: 18px;
-        line-height: 40px;
-    }
-    
-    .form-register a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-    }
-    
-    .form-register a:hover {
-        color: rgb(208, 208, 208);
-        text-decoration: underline;
-    }
-    /*fin de  estilos de formulario*/
-    /*caja de  historial*/
-    
-    .card {
-        margin: 5% 0;
-        width: auto;
-        height: auto;
-    }
-    
-    .card-body {
-        color: white;
-        background: #000;
-    }
-    
-    .card-body button.boto {
-        color: rgb(255, 255, 255);
-        background: #000;
-        justify-items: center;
-        border: 1px solid white;
-    }
-    
-    .card-precio {
-        padding: 2%;
-        color: white;
-        border-radius: 35px;
-        background: #000;
-    }
-    
-    .card-precio:hover {
-        color: #000;
-        background: white;
-    }
-    
-    .botos {
-        border: 1px solid white;
-        margin: auto;
-        color: #ffffff;
-        background: transparent;
-        width: 70px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 35px;
-        border-bottom-right-radius: 35px;
-        border-bottom-left-radius: 0;
-    }
-    
-    .boto {
-        border: 1px solid white;
-        margin: auto 4px;
-        color: #ffffff;
-        background: transparent;
-        width: 70px;
-        border-radius: 35px;
-        border-top-left-radius: 35px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 35px;
-    }
-    
-    button.boto:hover,
-    .boto:hover {
-        transform: translateY(-.5em);
-        color: rgb(0, 0, 0);
-        background: #ffffff;
-    }
-    
-    button.botos:hover,
-    .botos:hover {
-        transform: translateY(-.5em);
-        color: rgb(0, 0, 0);
-        background: #ffffff;
-    }
-    
-    .centrado {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: end;
-        justify-items: center;
-        flex-direction: column;
-    }
-    /*fin caja de historial*/
-    
-    tr.paciente td,
-    .estilizar th {
-        color: rgb(255, 255, 255);
-        margin: 0;
-        text-align: center;
-    }
-    
-    tr.estilizar th {
-        padding: 15px;
-        font-weight: bold;
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .contenedor {
-        color: map-get($colores, letras);
-        border-radius: 35px;
-        @include gradientLine(top, rgb(0, 0, 0)50%, rgb(141, 141, 141));
-        box-shadow: 7px 7px 7px linen;
-    }
-    
-    .miFormula {
-        margin: 0%;
-        width: 100%;
-        height: 100%;
-        padding: 0%;
-    }
-    
-    .padre-cajita {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "cajita1 cajita2";
-        padding: 10px;
-        grid-gap: 5px;
-    }
-    
-    .cajita1 {
-        grid-area: cajita1;
-    }
-    
-    .cajita2 {
-        grid-area: cajita2;
-    }
-    
-    #miCajaFija {
-        width: 90%;
-    }
-    /*animaciones  creadas para el proyecto y para precentar */
-    
-    .animat {
-        width: 100%;
-        height: 250px;
-        animation-name: animar;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 6s;
-        animation-delay: 2s;
-        margin: 0;
+    p {
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        transition: 2s;
-        text-shadow: 4px 4px 5px rgba(206, 206, 206, 0.333);
-        flex-direction: row;
+        padding: 5%;
     }
-    
-    @keyframes animar {
-        0% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(83, 83, 83) 51%);
-        }
-        20% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(108, 108, 108) 37%);
-        }
-        40% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(77, 77, 77) 67%);
-        }
-        60% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(66, 66, 66) 48%);
-        }
-        80% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(99, 99, 99) 48%);
-        }
-        100% {
-            width: 100%;
-            height: 10%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(92, 92, 92) 26%);
-        }
+}
+
+.mi-grupo2 {
+    align-items: center;
+    align-content: center;
+    img {
+        width: 250px;
+        height: 300px;
+        background-size: cover;
     }
-    
-    .animarCajas,
-    .animarCajas4,
-    .animarCajas3,
-    .animarCajas2 {
-        width: 320px;
-        height: 200px;
-        margin: 90px;
-        animation-name: animarCajas;
-        animation-iteration-count: infinite;
-        animation-timing-function: steps(6, jump-none);
-        animation-duration: 6s;
-        animation-delay: 2s;
-    }
-    
-    @keyframes animarCajas {
-        0% {
-            transform: translateX(-500%);
-        }
-        5% {
-            transform: translateX(-450%);
-        }
-        10% {
-            transform: translateX(-400%);
-        }
-        15% {
-            transform: translateX(-350%);
-        }
-        20% {
-            transform: translateX(-300%);
-        }
-        25% {
-            transform: translateX(-250%);
-        }
-        30% {
-            transform: translateX(-200%);
-        }
-        35% {
-            transform: translateX(-150%);
-        }
-        40% {
-            transform: translateX(-100%);
-        }
-        45% {
-            transform: translateX(-50%);
-        }
-        50% {
-            transform: translateX(-20%);
-        }
-        55% {
-            transform: translateX(-0%);
-        }
-        58% {
-            transform: translateX(500%);
-        }
-        60% {
-            transform: translateX(450%);
-        }
-        65% {
-            transform: translateX(400%);
-        }
-        70% {
-            transform: translateX(350%);
-        }
-        75% {
-            transform: translateX(300%);
-        }
-        80% {
-            transform: translateX(250%);
-        }
-        85% {
-            transform: translateX(200%);
-        }
-        90% {
-            transform: translateX(150%);
-        }
-        94% {
-            transform: translateX(100%);
-        }
-        98% {
-            transform: translateX(50%);
-        }
-        99% {
-            transform: translateX(20%);
-        }
-        100% {
-            transform: translateX(0%);
-        }
-    }
-    /*
+}
+
+
+/*
 {
     animation-name: animarCajas2;
     animation-iteration-count: infinite;

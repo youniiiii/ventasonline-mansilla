@@ -8,13 +8,13 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
-  color: white; }
+  color: #ffffff; }
 
 body {
   margin: auto;
+  background: url(../imagenes/fondonegro.webp) no-repeat;
   align-items: baseline;
   font-family: sans-serif;
-  background: url(../imagenes/fondonegro.webp) no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -23,7 +23,7 @@ body {
   width: 100%; }
 
 li {
-  margin: 0 1%; }
+  margin: 0 0%; }
 
 .lupa {
   border-radius: 35px;
@@ -52,7 +52,7 @@ li {
 
 /*fin de cambios en los logos */
 .color-blanco {
-  color: white; }
+  color: #ffffff; }
 
 .submenu {
   margin: 0;
@@ -75,7 +75,7 @@ li {
   padding: 0% 1%;
   font-size: 0px;
   height: 100%;
-  text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333); }
+  text-shadow: 4px 4px 5px rgba(178, 178, 178, 0.333); }
 
 .submenu li:hover {
   transform: translateY(-5px); }
@@ -160,10 +160,11 @@ form fieldset {
   box-shadow: 0 5px 15px #2c2c2c; }
 
 form fieldset legend {
-  background: #0058fb;
+  background: transparent;
   width: 100%;
   text-align: center;
-  margin: 2%; }
+  margin: 2%;
+  color: #EEE; }
 
 section button {
   position: relative;
@@ -192,7 +193,7 @@ span p {
 
 .boto:hover {
   color: white;
-  background: #1c53d2; }
+  background: #000000; }
 
 form.catal {
   height: 100%;
@@ -212,12 +213,14 @@ form.catal {
   padding: 0%; }
 
 option {
-  background: #2214c9; }
+  color: #EEE;
+  transition: 2s;
+  background: black; }
 
 img,
 video {
-  border-radius: 3%;
-  box-shadow: 0 5px 15px #252527; }
+  width: 90%;
+  border-radius: 3%; }
 
 section h2 {
   color: #ffffff; }
@@ -252,7 +255,8 @@ article {
   flex-direction: column; }
 
 table.tablaContacto {
-  background: #6374c6; }
+  background: black;
+  color: #EEE; }
 
 table.tablaContacto tr.tablaTitulo {
   margin: 0%;
@@ -395,16 +399,13 @@ section#dudas {
 /* estilos de formularios*/
 .form-register {
   width: 70%;
-  background: linear-gradient(to top, pink, blue);
+  background: linear-gradient(to top, black 50%, #8d8d8d);
   padding: 30px;
   margin: 10% auto;
   margin-top: 50px;
-  border-radius: 4px;
+  border-radius: 14px;
   color: white;
-  box-shadow: 7px 13px 37px #000; }
-
-#leg {
-  background: transparent; }
+  box-shadow: 7px 13px 37px #eaeaea; }
 
 .form-register h4 {
   font-size: 22px;
@@ -418,11 +419,10 @@ section#dudas {
 
 .controls {
   width: 100%;
-  background: #24303c;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid #9d9d9d;
   font-family: 'calibri';
   font-size: 18px;
   color: white;
@@ -444,16 +444,6 @@ section#dudas {
 .form-register a:hover {
   color: #d0d0d0;
   text-decoration: underline; }
-
-.form-register .botons {
-  width: 50%;
-  border: 1px solid white;
-  margin: auto 20%;
-  display: inline-block;
-  color: #ffffff;
-  background: #000;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px; }
 
 /*fin de  estilos de formulario*/
 /*caja de  historial*/
@@ -505,12 +495,14 @@ section#dudas {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 35px; }
 
-button.boto:hover {
+button.boto:hover,
+.boto:hover {
   transform: translateY(-0.5em);
   color: black;
   background: #ffffff; }
 
-button.botos:hover {
+button.botos:hover,
+.botos:hover {
   transform: translateY(-0.5em);
   color: black;
   background: #ffffff; }
@@ -528,22 +520,23 @@ button.botos:hover {
 /*fin caja de historial*/
 tr.paciente td,
 .estilizar th {
-  padding: .7em;
+  color: white;
   margin: 0;
-  border: 1px solid black;
   text-align: center; }
 
 tr.estilizar th {
-  font-weight: bold;
-  background-color: #EEE; }
+  padding: 15px;
+  font-weight: bold; }
 
 .container {
   display: flex;
   justify-content: center; }
 
 .contenedor {
-  color: #000;
-  background: #ffffff; }
+  color: #ffffff;
+  border-radius: 35px;
+  background: linear-gradient(to top, black 50%, #8d8d8d);
+  box-shadow: 7px 7px 7px linen; }
 
 .miFormula {
   margin: 0%;
@@ -585,7 +578,7 @@ tr.estilizar th {
   align-items: center;
   align-content: center;
   transition: 2s;
-  text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333);
+  text-shadow: 4px 4px 5px rgba(206, 206, 206, 0.333);
   flex-direction: row; }
 
 @keyframes animar {
@@ -841,7 +834,7 @@ tr.estilizar th {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #fff5f5;
+  color: #ffffff;
   margin-right: 10px;
   background: transparent;
   text-align: center;
@@ -864,7 +857,7 @@ tr.estilizar th {
   font-family: "Great Vibes", cursive;
   text-align: center;
   align-items: center;
-  color: white; }
+  color: #ffffff; }
 
 .piePagina .grupo2 small {
   font-size: 15px;
@@ -902,10 +895,10 @@ tr.estilizar th {
     height: auto; }
   .contenido3 h2 {
     font-size: 50px;
-    color: #000000; }
+    color: #ffffff; }
   .contenido3 p {
     font-size: 40px;
-    color: #000000; }
+    color: #ffffff; }
   .piePagina .grupo1 {
     width: 100%;
     max-width: 1200px;
@@ -978,7 +971,7 @@ tr.estilizar th {
     line-height: 49px;
     text-transform: uppercase;
     margin: 30px auto;
-    color: #000000;
+    color: #ffffff;
     display: flex;
     align-content: center;
     align-items: stretch;
@@ -1012,10 +1005,10 @@ tr.estilizar th {
     width: 100%; }
   .contenido3 h2 {
     font-size: 50px;
-    color: #000000; }
+    color: #ffffff; }
   .contenido3 p {
     font-size: 40px;
-    color: #000000; }
+    color: #ffffff; }
   .piePagina .grupo1 {
     width: 100%;
     max-width: 1200px;
@@ -1161,16 +1154,16 @@ tr.estilizar th {
     height: 200px; }
   .contenido3 h2 {
     font-size: 30px;
-    color: #000000; }
+    color: #ffffff; }
   .contenido3 p {
     font-size: 40px;
-    color: #000000; }
+    color: #ffffff; }
   .piePagina .grupo1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "logo" "enlace" "redes";
     grid-gap: 5px;
     padding: 5px 0px; }

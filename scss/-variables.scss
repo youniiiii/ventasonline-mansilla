@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-$blanco:white ;
+$blanco:white;
 $rojo:red;
-$letraclasica: 'Great Vibes', cursive;
-
-
-
-
-@mixin posicion-global( $puno,$pdos,$ptres,$pcuatro,$pcinco) {
+$letraclasica: 'Great Vibes',
+cursive;
+$colores: ( "principal": #ffffff,
+"secundario": #000000,
+"letras": #ffffff);
+@mixin posicion-global( $puno,
+$pdos,
+$ptres,
+$pcuatro,
+$pcinco) {
     display: flex;
     justify-content: $puno;
     justify-items: $pdos;
@@ -16,12 +19,13 @@ $letraclasica: 'Great Vibes', cursive;
     text-align: $pcinco;
 }
 
-@mixin gradient ($color,$color2){
-    background:  radial-gradient(circle,$color, $color2);
-   
+@mixin gradient ($color,
+$color2) {
+    background: radial-gradient(circle, $color, $color2);
 }
 
-@mixin gradientLine($sentido,$co,$colo) {
-    background: linear-gradient(to $sentido,$co,$colo);  
-   
+@mixin gradientLine($sentido,
+$co,
+$colo) {
+    background: linear-gradient(to $sentido, $co, $colo);
 }

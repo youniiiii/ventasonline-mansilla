@@ -1,7 +1,6 @@
-
 @media all and (max-width:1000px) {
     body {
-        margin:auto;
+        margin: auto;
     }
     .submenu {
         font-size: 5px;
@@ -37,13 +36,12 @@
     }
     .contenido3 h2 {
         font-size: 50px;
-        color: #000000;
+        color: map-get($colores, letras);
     }
     .contenido3 p {
         font-size: 40px;
-        color: #000000;
+        color: map-get($colores, letras);
     }
-   
     .piePagina .grupo1 {
         width: 100%;
         max-width: 1200px;
@@ -130,7 +128,7 @@
         line-height: 49px;
         text-transform: uppercase;
         margin: 30px auto;
-        color: #000000;
+        color: map-get($colores, letras);
         display: flex;
         align-content: center;
         align-items: stretch;
@@ -178,22 +176,21 @@
     }
     .contenido3 h2 {
         font-size: 50px;
-        color: #000000;
+        color: map-get($colores, letras);
     }
     .contenido3 p {
         font-size: 40px;
-        color: #000000;
+        color: map-get($colores, letras);
     }
     .piePagina .grupo1 {
         width: 100%;
         max-width: 1200px;
         margin: auto;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:  1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "logo logo" "enlace redes";
         grid-gap: 5px;
         padding: 5px 0px;
-
     }
     .piePagina {
         width: 100%;
@@ -271,19 +268,18 @@
         justify-items: auto;
         flex-direction: column;
     }
-    .bg-transparent img { 
-        margin :auto;
-        display:flex;
+    .bg-transparent img {
+        margin: auto;
+        display: flex;
         justify-items: center;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
-        align-content:center;
-        width:60%;
+        align-content: center;
+        width: 60%;
     }
 }
-@media all and (max-width: 340px) {
-   
 
+@media all and (max-width: 340px) {
     div.misCompra {
         position: flex;
         margin: 0%;
@@ -360,22 +356,21 @@
     }
     .contenido3 h2 {
         font-size: 30px;
-        color: #000000;
+        color: map-get($colores, letras);
     }
     .contenido3 p {
         font-size: 40px;
-        color: #000000;
+        color: map-get($colores, letras);
     }
     .piePagina .grupo1 {
         width: 100%;
         max-width: 1200px;
         margin: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr  1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "logo" "enlace" "redes";
         grid-gap: 5px;
         padding: 5px 0px;
-
     }
     .piePagina {
         width: 100%;
@@ -401,7 +396,8 @@
         flex-direction: column;
         padding: auto;
         margin: 0%;
-    }.padre-cajita {
+    }
+    .padre-cajita {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -409,13 +405,13 @@
         padding: 10px;
         grid-gap: 5px;
     }
-    .redSociales{  
-         margin :auto;
-        display:flex;
+    .redSociales {
+        margin: auto;
+        display: flex;
         justify-items: center;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
-        align-content:center;
+        align-content: center;
     }
     .cajita1 {
         width: 100%;
@@ -426,22 +422,20 @@
         grid-area: cajita2;
     }
     footer {
-        margin :auto;
-        display:flex;
+        margin: auto;
+        display: flex;
         justify-items: center;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
-        align-content:center;
+        align-content: center;
     }
-    .bg-transparent img { 
-        margin :auto;
-        display:flex;
+    .bg-transparent img {
+        margin: auto;
+        display: flex;
         justify-items: center;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
-        align-content:center;
-        width:90%;
+        align-content: center;
+        width: 90%;
     }
- 
 }
-

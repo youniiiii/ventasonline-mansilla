@@ -1,12 +1,10 @@
 @import "-variables";
-
 li {
-    margin: 0 1%;
+    margin: 0 0%;
 }
 
 .lupa {
-
-    border-radius:35px;
+    border-radius: 35px;
     background: $blanco;
     border: none;
     color: rgb(254, 153, 0);
@@ -14,9 +12,11 @@ li {
 }
 
 .logo img {
-    background:transparent;
+    background: transparent;
     border-radius: 100px;
 }
+
+
 /* fin nav botonera
 
 /* cambio en los logos  */
@@ -35,5 +35,5 @@ li {
     filter: invert(100%);
 }
 
- 
+
 /*fin de cambios en los logos */

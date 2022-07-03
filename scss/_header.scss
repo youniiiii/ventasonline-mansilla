@@ -1,9 +1,9 @@
 @import "-variables";
 // header de categorias  se uso linear-gradient */
-     
 .color-blanco {
-    color:white;
-   }
+    color: map-get($colores, letras);
+}
+
 .submenu {
     margin: 0;
     background: linear-gradient(to top, rgb(169, 169, 169), #000000);
@@ -27,13 +27,14 @@
     padding: 0% 1%;
     font-size: 0px;
     height: 100%;
-    text-shadow: 4px 4px 5px rgba(0, 47, 134, 0.333);
+    text-shadow: 4px 4px 5px rgba(178, 178, 178, 0.333)
 }
 
 .submenu li:hover {
     transform: translateY(-5px);
 }
-.centrar{
+
+.centrar {
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -42,7 +43,4 @@
     text-align: center;
 }
 
-
 //  fin de  header de codigos  relacionados al  menu de categorias */
-
-

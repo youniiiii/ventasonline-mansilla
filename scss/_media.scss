@@ -1,7 +1,4 @@
 @media all and (max-width:1000px) {
-    body {
-        margin: auto;
-    }
     .submenu {
         font-size: 5px;
         display: flex;
@@ -19,20 +16,19 @@
         width: 100%;
     }
     div.misCompra {
-        position: flex;
-        margin: 0%;
+        margin: 1%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "video" "descripcion " "formulario" " calificacion "" dudas";
-        grid-gap: 10px;
-        width: 100%;
-        height: 100%;
+        grid-template-areas: "video video ""descripcion formulario""calificacion formulario"" dudas formulario";
+        grid-gap: 20px;
     }
-    #videos {
+    section#video {
         width: 100%;
-        margin: 0% 1%;
-        height: auto;
+        display: flex;
+        grid-area: video;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .contenido3 h2 {
         font-size: 50px;
@@ -78,6 +74,52 @@
         justify-items: auto;
         flex-direction: column;
     }
+    .card-img-top {
+        margin: auto;
+        width: 250px;
+        height: 300px;
+        background-size: cover;
+    }
+    .botos {
+        font-size: 8px;
+        padding: 1px;
+        text-align: center;
+        width: 60px;
+    }
+    .boto {
+        font-size: 8px;
+        padding: 1px;
+        text-align: center;
+        width: 60px;
+    }
+    .mi-contenido {
+        width: 60%;
+        height: 400px;
+    }
+    .mi-grupo1 {
+        text-align: center;
+        width: 100%;
+        align-content: space-between;
+        strong {
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            padding: 10%;
+        }
+        p {
+            overflow: hidden;
+            padding: 5%;
+        }
+    }
+    .mi-grupo2 {
+        align-items: center;
+        align-content: center;
+        img {
+            width: 250px;
+            height: 300px;
+            background-size: cover;
+            object-fit: cover;
+        }
+    }
 }
 
 @media all and (max-width:590px) {
@@ -93,25 +135,29 @@
         display: none;
     }
     div.misCompra {
-        position: flex;
-        margin: 0%;
+        margin: 1%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "video" "descripcion " "formulario" " calificacion "" dudas";
-        grid-gap: 10px;
-        width: 100%;
-        height: 100%;
+        grid-template-areas: "video video ""descripcion descripcion""calificacion formulario"" dudas formulario";
+        grid-gap: 20px;
+        section#video {
+            width: 100%;
+            grid-area: video;
+            .imagen-reserva {
+                margin: auto;
+                display: block;
+            }
+            .slider,
+            .menu {
+                display: none;
+            }
+        }
     }
     .contenedor {
         width: 100%;
         height: auto;
         margin: 0%;
-    }
-    #videos {
-        width: 100%;
-        margin: 0% 1%;
-        height: auto;
     }
     .logo img {
         display: block;
@@ -133,43 +179,6 @@
         align-content: center;
         align-items: stretch;
         justify-content: center;
-    }
-    .lista li {
-        margin: 20px 0;
-    }
-    ul.lista {
-        list-style: none;
-        padding-left: 50px;
-        animation: cambiar 6s infinite;
-    }
-    @keyframes cambiar {
-        0% {
-            margin-top: 0;
-        }
-        20% {
-            margin-top: 0;
-        }
-        25% {
-            margin-top: -30px;
-        }
-        50% {
-            margin-top: -60px;
-        }
-        55% {
-            margin-top: -90px;
-        }
-        80% {
-            margin-top: -60px;
-        }
-        85% {
-            margin-top: -120px;
-        }
-        90% {
-            margin-top: -150px;
-        }
-        100% {
-            margin-top: 0;
-        }
     }
     .video video {
         width: 100%;
@@ -277,24 +286,55 @@
         align-content: center;
         width: 60%;
     }
+    .card-img-top {
+        margin: auto;
+        width: 250px;
+        height: 300px;
+        background-size: cover;
+    }
+    .mi-contenido {
+        margin: auto;
+        display: flex;
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mi-grupo2 {
+        width: 300px;
+        align-items: center;
+        align-content: center;
+        img {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            object-fit: cover;
+        }
+    }
 }
 
 @media all and (max-width: 340px) {
     div.misCompra {
-        position: flex;
-        margin: 0%;
+        margin: 1%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "video" "descripcion " "formulario" " calificacion "" dudas";
-        grid-gap: 10px;
-        width: 100%;
-        height: 100%;
-    }
-    #videos {
-        width: 100%;
-        margin: 0% 1%;
-        height: auto;
+        grid-template-areas: "video  "" descripcion"" formulario""calificacion"" dudas ";
+        grid-gap: 20px;
+        section#video {
+            width: 100%;
+            grid-area: video;
+            .imagen-reserva {
+                margin: auto;
+                display: block;
+            }
+            .slider,
+            .menu {
+                display: none;
+            }
+        }
     }
     .contenedor {
         width: 100%;
@@ -437,5 +477,32 @@
         align-items: center;
         align-content: center;
         width: 90%;
+    }
+    .card-img-top {
+        margin: auto;
+        width: 250px;
+        height: 300px;
+        background-size: cover;
+    }
+    .mi-contenido {
+        margin: auto;
+        display: flex;
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mi-grupo2 {
+        width: 300px;
+        align-items: center;
+        align-content: center;
+        img {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            object-fit: cover;
+        }
     }
 }

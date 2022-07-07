@@ -1,17 +1,9 @@
-@import "-variables";
-
-/* carrusel con bootstrap */
-
-#medida {
+#medida1,
+#medida2,
+#medida3 {
     width: 90%;
     height: 400px;
 }
-
-
-/* fin carrusel */
-
-
-/* articulos de  contenido  */
 
 section.contenido3 article {
     position: relative;
@@ -20,19 +12,12 @@ section.contenido3 article {
 }
 
 article:hover {
-    background: rgb(35, 77, 168);
+    background: rgb(0, 0, 0);
 }
 
 article h2 {
+    text-shadow: 10px 10px 10px rgb(255, 255, 255);
     font-size: 15px;
-}
-
-section form fieldset {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
-    align-items: center;
-    background: white;
 }
 
 .video iframe {
@@ -42,15 +27,13 @@ section form fieldset {
 
 iframe {
     width: 90%;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
 }
 
 form fieldset.catalogo {
     margin-top: 2%;
     margin-bottom: 4%;
-    text-align: center;
-    align-items: center;
     padding: 0%;
     margin: 5% 10%;
     text-align: center;
@@ -70,10 +53,6 @@ form fieldset.catalogos legend h2 {
     width: 100%;
 }
 
-form fieldset.catalogos {
-    margin-bottom: 40px;
-}
-
 .tabla {
     background: #ffffff;
 }
@@ -87,7 +66,6 @@ section.tablaa h2 {
 }
 
 form fieldset {
-    margin: 3% 10%;
     box-shadow: 0 5px 15px rgb(44, 44, 44);
 }
 
@@ -148,10 +126,37 @@ form.catal {
     opacity: 30%;
 }
 
-#masAnchos {
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
+#mi-busqueda {
+    margin: 1%;
+    fieldset {
+        margin: auto 1%;
+        width: auto;
+        legend {
+            h2 {
+                text-shadow: 10px 10px 10px rgb(0, 0, 0);
+                text-align: center;
+                height: 30px;
+                color: #000;
+            }
+        }
+        label {
+            text-shadow: 10px 10px 10px rgb(0, 0, 0);
+            text-align: center;
+            padding: 1%;
+            text-align: center;
+            color: black;
+        }
+        input {
+            text-shadow: 10px 10px 10px rgb(0, 0, 0);
+            text-align: center;
+            background: #000;
+        }
+        select {
+            text-shadow: 10px 10px 10px rgb(0, 0, 0);
+            text-align: center;
+            background-color: #000;
+        }
+    }
 }
 
 option {
@@ -160,18 +165,12 @@ option {
     background: black;
 }
 
-img,
-video {
-    width: 90%;
-    border-radius: 3%;
-}
-
 section h2 {
     color: #ffffff;
 }
 
 a:activo {
-    color: yellow;
+    color: rgb(255, 255, 255);
 }
 
 input {
@@ -193,35 +192,30 @@ article.tamaño h2 {
     margin: 2%;
     font-size: 20px;
     text-transform: uppercase;
-    background: url(/imagenes/fondoo.jpg);
 }
 
 article {
     display: flex;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    text-align: center;
     flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    img {
+        width: 100px;
+        height: auto;
+    }
 }
 
 table.tablaContacto {
-    background: rgb(0, 0, 0);
-    color: #EEE;
-}
-
-table.tablaContacto tr.tablaTitulo {
-    margin: 0%;
-    padding: 0%;
-}
-
-table.tablaContacto {
-    border: rgb(255, 255, 255);
     border-spacing: 15px;
-    background: rgb(206, 206, 206);
+    background: rgb(0, 0, 0);
     width: 100%;
+    color: #EEE;
     align-items: center;
     text-align: center;
+    margin: 0%;
+    padding: 0%;
 }
 
 div.grid-padre {
@@ -270,11 +264,15 @@ div.grid div {
 }
 
 .ayuda {
+    width: 50%;
     padding: 0%;
-    margin: 0% auto;
+    margin: 5% auto;
     text-align: center;
     align-items: center;
     position: relative;
+    @media (max-width: 600px) {
+        width: 90%;
+    }
 }
 
 .ayuda legend {
@@ -291,49 +289,41 @@ h2 {
     padding: 0%;
 }
 
-.compra {
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-}
-
-
-/*caja grid en compras   inicio*/
-
 div.misCompra {
-    margin: 0%;
+    margin: 1%;
     display: grid;
-    grid-template-areas: "video video video""descripcion descripcion formulario""calificacion calificacion formulario"" dudas dudas  dudas";
-    grid-gap: 10px;
-    width: 100%;
-    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "video video formulario""descripcion descripcion formulario""calificacion calificacion formulario"" dudas dudas  dudas";
+    grid-gap: 20px;
 }
 
 section#video {
     width: 100%;
+    display: flex;
     grid-area: video;
-    height: 100%;
+    justify-content: flex-start;
+    .imagen-reserva {
+        display: none;
+    }
 }
 
 section#calificacion {
+    width: 90%;
     grid-area: calificacion;
-    height: 100%;
-    width: 100%;
     background: transparent;
 }
 
 section#descripcion {
+    width: 90%;
     background: transparent;
     margin: 0%;
     grid-area: descripcion;
-    height: 100%;
 }
 
 section#formulario {
+    width: 90%;
     background: transparent;
-    height: 100%;
-    width: 100%;
     margin: 0%;
     grid-area: formulario;
     padding: 0%;
@@ -354,27 +344,18 @@ section#formulario {
 section {
     display: flex;
     justify-content: center;
-    justify-items: center;
     text-align: center;
     align-items: center;
-    align-content: center;
 }
 
 section#dudas {
+    width: 90%;
     background: transparent;
-    height: 100%;
-    width: 100%;
     margin: 0%;
     grid-area: dudas;
     display: flex;
     justify-content: center;
 }
-
-
-/*fin de  grid en la pagina de compra*/
-
-
-/* estilos de formularios*/
 
 .botons {
     background: #000;
@@ -383,11 +364,9 @@ section#dudas {
 }
 
 .form-register {
-    width: 70%;
+    margin: auto;
+    width: 100%;
     @include gradientLine(top, rgb(0, 0, 0)50%, rgb(141, 141, 141));
-    padding: 30px;
-    margin: 10% auto;
-    margin-top: 50px;
     border-radius: 14px;
     color: white;
     box-shadow: 7px 13px 37px rgb(234, 234, 234);
@@ -436,12 +415,6 @@ section#dudas {
     text-decoration: underline;
 }
 
-
-/*fin de  estilos de formulario*/
-
-
-/*caja de  historial*/
-
 .card {
     margin: 5% 0;
     width: auto;
@@ -449,27 +422,27 @@ section#dudas {
 }
 
 .card-body {
+    box-shadow: 3px 3px 15px 3px rgb(255, 255, 255);
     color: white;
-    background: #000;
-}
-
-.card-body button.boto {
-    color: rgb(255, 255, 255);
-    background: #000;
-    justify-items: center;
-    border: 1px solid white;
+    background: transparent;
+    width: auto;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
 .card-precio {
     padding: 2%;
     color: white;
     border-radius: 35px;
-    background: #000;
+    background: transparent;
 }
 
 .card-precio:hover {
-    color: #000;
-    background: white;
+    color: rgb(255, 255, 255);
+    transition: 3s;
+    background: transparent;
+    text-shadow: 10px 10px 15px rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .botos {
@@ -477,24 +450,32 @@ section#dudas {
     margin: auto;
     color: #ffffff;
     background: black;
-    width: 70px;
+    width: 95px;
     border-top-left-radius: 0;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 0;
+    text-transform: uppercase;
+    padding: 2px;
+    text-align: center;
+    font-size: 10px;
 }
 
 .boto {
+    font-size: 10px;
+    padding: 2px;
+    text-transform: uppercase;
     border: 1px solid white;
     margin: auto 4px;
     color: #ffffff;
     background: black;
-    width: 70px;
+    width: 95px;
     border-radius: 35px;
     border-top-left-radius: 35px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 35px;
+    text-align: center;
 }
 
 button.boto:hover,
@@ -522,9 +503,6 @@ button.botos:hover,
     flex-direction: column;
 }
 
-
-/*fin caja de historial*/
-
 tr.paciente td,
 .estilizar th {
     color: rgb(255, 255, 255);
@@ -540,11 +518,13 @@ tr.estilizar th {
 .container {
     display: flex;
     justify-content: center;
+    align-items: baseline;
 }
 
 .contenedor {
+    width: 100%;
     color: map-get($colores, letras);
-    border-radius: 35px;
+    border-radius: 5px;
     @include gradientLine(top, rgb(0, 0, 0)50%, rgb(141, 141, 141));
     box-shadow: 7px 7px 7px linen;
 }
@@ -576,9 +556,6 @@ tr.estilizar th {
 #miCajaFija {
     width: 90%;
 }
-
-
-/*animaciones  creadas para el proyecto y para precentar */
 
 .animat {
     width: 100%;
@@ -759,104 +736,142 @@ tr.estilizar th {
         width: 250px;
         height: 300px;
         background-size: cover;
+        object-fit: cover;
     }
 }
 
-
-/*
-{
-    animation-name: animarCajas2;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 6s;
-    animation-delay: 2s;
+.card-img-top {
+    margin: auto;
+    width: 300px;
+    height: 350px;
+    background-size: cover;
 }
 
-@keyframes animarCajas2 {
+.usuario {
+    position: relative;
+    width: 50%;
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        .text {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            padding: 16px 32px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+    }
+}
+
+.usuario:hover {
+    .image {
+        opacity: 0.3;
+    }
+}
+
+.usuario:hover {
+    .middle {
+        opacity: 1;
+    }
+}
+
+.infinite {
+    align-items: center;
+    background: #00000000;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    .slider {
+        border-radius: 35px;
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+        .slide {
+            height: 100px;
+            width: 250px;
+        }
+    }
+}
+
+@keyframes scroll {
     0% {
-        transform: rotate(5deg);
-    }
-    20% {
-        transform: rotate(-5deg);
-    }
-    40% {
-        transform: rotate(5deg);
-    }
-    60% {
-        transform: rotate(-5deg);
-    }
-    80% {
-        transform: rotate(5deg);
+        transform: translateX(0);
     }
     100% {
-        transform: rotate(-5deg);
-    }
-    0% {
-        transform: rotate(5deg);
+        transform: translateX(calc(-250px * 7))
     }
 }
 
-{
-    animation-name: animarCajas3;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 6s;
-    animation-delay: 2s;
-}
-
-@keyframes animarCajas3 {
-    0% {
-        transform: scaley(1);
+.mi-imgagen-p {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    background: transparent;
+    ul.slider {
+        position: relative;
+        top: -50%;
+        li {
+            width: 400px;
+            height: 200px;
+            background-size: cover;
+            list-style: none;
+            opacity: 0;
+            transition: opacity .5s;
+            position: absolute;
+        }
+        li:first-child {
+            opacity: 1;
+        }
+        li:target {
+            opacity: 1;
+        }
     }
-    20% {
-        transform: scaley(-1);
-    }
-    40% {
-        transform: scaley(1);
-    }
-    60% {
-        transform: scaley(-1);
-    }
-    80% {
-        transform: scaley(1);
-    }
-    100% {
-        transform: scaley(-1);
-    }
-    0% {
-        transform: scaley(1);
-    }
-}
-
-. {
-    animation-name: animarCajas4;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 6s;
-    animation-delay: 2s;
-}
-
-@keyframes animarCajas4 {
-    0% {
-        transform: skewX(11deg);
-    }
-    20% {
-        transform: skewX(-11deg);
-    }
-    40% {
-        transform: skewX(11deg);
-    }
-    60% {
-        transform: skewX(-11deg);
-    }
-    80% {
-        transform: skewX(11deg);
-    }
-    100% {
-        transform: skewX(-11deg);
-    }
-    0% {
-        transform: skewX(11deg);
+    padding: 0;
+    margin: 0;
+    .mi-imagen {
+        list-style: none;
+        position: relative;
     }
 }
-*/

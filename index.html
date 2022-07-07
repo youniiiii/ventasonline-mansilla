@@ -11,23 +11,22 @@
     <meta name="keywords" content="compra,venta,oferta,respuestos" />
     <title>todos podemos comprarlo</title>
     <link rel="shortcut icon" href="./imagenes/logoinver.png" type="image/x-icon" />
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/estilo.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark animat sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark absolute-top">
         <div class="container-fluid">
             <a href="./index.html " alt="inicio" class="logo menu-logo navbar-brand">
                 <img src="./imagenes/logonegro.png" width="60px " height="60px " alt="imagen de logo empresa " />
             </a>
 
-            <button class="navbar-toggler m-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="derecha collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll navbar-nav ms-auto mb-2 mb-lg-0" style="--bs-scroll-height: 100px">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll navbar-nav ms-auto mb-2 mb-lg-0" style="--bs-scroll-height: auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./index.html ">inicio</a>
                     </li>
@@ -51,8 +50,8 @@
                     <li class="nav-item">
                         <form class="d-flex card-text placeholder-glow nav-link" role="search">
                             <button class="lupa placeholder active" type="submit">
-                                       &#128270;
-                                     </button>
+                                &#128270;
+                            </button>
                             <input class="me-1 lupa" type="search" placeholder="Search" aria-label="Search" />
                         </form>
                     </li>
@@ -61,8 +60,7 @@
                         <a href="./paginas/registro.html" class="nav-link active">registrarse</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./paginas/iniciarsesion.html" class="nav-link active">
-                           login</a>
+                        <a href="./paginas/iniciarsesion.html" class="nav-link active"> login</a>
                     </li>
                 </ul>
             </div>
@@ -70,172 +68,50 @@
     </nav>
 
     <header class="centrar">
-        <div class="color-blanco">
-            <h1>somos tu mejor opcion</h1>
-        </div>
+
+        <h1>somos tu mejor opcion</h1>
+
     </header>
     <main>
-        <!--inicio del carrucel de bootstrap -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" id="margenes">
-                <div class="carousel-item active">
-                    <img src="./imagenes/oferta4.jpg" class="d-block w-100" id="medida" alt="foto oferta" />
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/ofertas3.jpg" class="d-block w-100" id="medida" alt="foto oferta" />
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/ofertas2.jpg" class="d-block w-100" id="medida" alt="foto oferta" />
+        <section class="d-block w-100 m-auto">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="margenes">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/oferta4.jpg" class="d-block w-100" id="medida1" alt="ofertas de electrodomesticos cocina heladera lavarropa" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/ofertas3.jpg" class="d-block w-100" id="medida2" alt="ofertas de electrodomesticos cocina heladera lavarropa" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/ofertas2.jpg" class="d-block w-100" id="medida3" alt="ofertas de electrodomesticos cocina heladera lavarropa" />
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
         <section>
-            <div>
-                <h2>productos mas vendidos</h2>
-                <p>Aquí encontrarás lo mejor</p>
-            </div>
+            <h2>productos mas vendidos</h2>
         </section>
         <section>
             <div class="album py-5 bg-transparent">
                 <div class="container">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
+                        <div class="col ">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/caloventor.webp" alt="foto de un caloventor" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/televisor.png" alt="televisor de gran calidad color negro de 60 pulgas 4k de definicion" class="bd-placeholder-img card-img-top" />
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                                                comprar
-                                              </button></a>
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm botos">
-                                                 guardar
-                                                </button></a>
-                                        </div>
-                                        <small class="card-precio">$xxxx</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/vaporera.webp" alt="foto de una vaporera" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-
-                                <div class="card-body">
-                                    <p class="card-text">informacion del producto</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
+                                            <a href="./paginas/televisor.html">
+                                                <button type="button" class="btn btn-sm boto">
                                                     comprar
-                                                  </button></a>
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm botos">
-                                                     guardar
-                                                   </button></a>
-                                        </div>
-                                        <small class="card-precio">$xxxx</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/celular3.webp" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-
-                                <div class="card-body">
-                                    <p class="card-text">informacion del producto</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
-                                        </div>
-                                        <small class="card-precio">$xxxx</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/computadora2.webp" alt="foto de un gabinete gamer" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-
-                                <div class="card-body">
-                                    <p class="card-text">informacion del producto</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
-                                        </div>
-                                        <small class="card-precio">$xxxx</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/estuda2.webp" alt="foto de una estufa" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-
-                                <div class="card-body">
-                                    <p class="card-text">informacion del producto</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
-                                        </div>
-                                        <small class="card-precio">$xxxx</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/televisor2.webp" alt="foto  de televisor" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-
-                                <div class="card-body">
-                                    <p class="card-text">informacion del producto</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/televisor.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
-                                        </div>
-                                        <small class="card-precio">$xxxx</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/carpaacampar2.webp" alt="foto de una carpa de acampar" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-
-                                <div class="card-body">
-                                    <p class="card-text">informacion del producto</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small class="card-precio">$xxxx</small>
                                     </div>
@@ -244,39 +120,192 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/caloventor.webp" alt="foto de un caloventor" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/vaporera.png" alt="foto de una vaporera color blanca con dibujos" class="bd-placeholder-img card-img-top" />
 
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm  botos">
-                          guardar
-                        </button></a>
-                                        </div>
-                                        <small class="card-precio">$xxxx</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/carpaacampar.webp" alt=" foto de una carpa de acampar" class="bd-placeholder-img card-img-top" width="100%" height="225" />
-
-                                <div class="card-body">
-                                    <p class="card-text">informacion del producto</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                            <a href="./paginas/error404.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/error404.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <small class="card-precio">$xxxx</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm bg-transparent">
+                                <img src="./imagenes/celular3.png" alt="imagenes de un celular  s23  de la marca samsung" class="bd-placeholder-img card-img-top" />
+
+                                <div class="card-body">
+                                    <p class="card-text">informacion del producto</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="./paginas/celular.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/celular.html">
+                                                <button type="button" class="btn btn-sm botos">
+                                                    guardar
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <small class="card-precio">$xxxx</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm bg-transparent">
+                                <img src="./imagenes/computadora2.png" alt="foto de un gabinete gamer  de colores" class="bd-placeholder-img card-img-top" />
+
+                                <div class="card-body">
+                                    <p class="card-text">informacion del producto</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="./paginas/gabinete.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/gabinete.html">
+                                                <button type="button" class="btn btn-sm botos">
+                                                    guardar
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <small class="card-precio">$xxxx</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm bg-transparent">
+                                <img src="./imagenes/estuda2.png" alt="foto de una estufa" class="bd-placeholder-img card-img-top" />
+
+                                <div class="card-body">
+                                    <p class="card-text">informacion del producto</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="./paginas/error404.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/error404.html">
+                                                <button type="button" class="btn btn-sm botos">
+                                                    guardar
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <small class="card-precio">$xxxx</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm bg-transparent">
+                                <img src="./imagenes/televisor2.png" alt="foto  de televisor" class="bd-placeholder-img card-img-top" />
+
+                                <div class="card-body">
+                                    <p class="card-text">informacion del producto</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="./paginas/televisor.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/televisor.html">
+                                                <button type="button" class="btn btn-sm botos">
+                                                    guardar
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <small class="card-precio">$xxxx</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm bg-transparent">
+                                <img src="./imagenes/carpaacampar.png" alt="foto de una carpa de acampar" class="bd-placeholder-img card-img-top" />
+
+                                <div class="card-body">
+                                    <p class="card-text">informacion del producto</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="./paginas/carpa.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/carpa.html">
+                                                <button type="button" class="btn btn-sm botos">
+                                                    guardar
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <small class="card-precio">$xxxx</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm bg-transparent">
+                                <img src="./imagenes/celular.png" alt="foto de una celular s11 marca samsung" class="bd-placeholder-img card-img-top" />
+
+                                <div class="card-body">
+                                    <p class="card-text">informacion del producto</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="./paginas/celular.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/celular.html">
+                                                <button type="button" class="btn btn-sm botos">
+                                                    guardar
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <small class="card-precio">$xxxx</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm bg-transparent">
+                                <img src="./imagenes/carpaacampar2.png" alt=" foto de una carpa de acampar" class="bd-placeholder-img card-img-top" />
+
+                                <div class="card-body">
+                                    <p class="card-text">informacion del producto</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="./paginas/carpa.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/carpa.html">
+                                                <button type="button" class="btn btn-sm botos">
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small class="card-precio">$xxxx</small>
                                     </div>
@@ -288,10 +317,54 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>ofertas</h2>
-                <p>Aquí encontrarás lo mejor</p>
+        <section class="infinite">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="https://blog.liderlogo.com/wp-content/uploads/nike-logo-marca-memorable.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://blog.liderlogo.com/wp-content/uploads/2-5.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://blog.liderlogo.com/wp-content/uploads/apple-logo-mara-memorable.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://www.estrategia-sustentable.com.mx/wp-content/uploads/2021/03/Sony-Logotipo-1957%E2%80%931961-1132x509.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://bandeim.files.wordpress.com/2012/03/samsung_logo1.jpg?w=1067&h=&zoom=2" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="data:image/png;base64,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"
+                            height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://i0.wp.com/www.paranaonline.com.ar/wp-content/uploads/2020/07/cetrogar.jpg?resize=800%2C445&ssl=1" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://devotoshopping.neexcdn.com.ar/wp-content/uploads/2018/12/musimundo-logo.jpg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://www.megatone.net/images/svgs/footer/megatone.svg" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://cdn2.downdetector.com/static/uploads/logo/claro_O6XytGk.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="data:image/png;base64,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"
+                            height="100" width="250" alt="" />
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -301,18 +374,21 @@
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div class="col">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/caloventor.webp" alt="foto de un caloventor" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/computadora.png" alt="foto de un gabinete gamer de colores " class="bd-placeholder-img card-img-top" />
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                            <a href="./paginas/gabinete.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/gabinete.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small>$xxxx</small>
                                     </div>
@@ -321,19 +397,22 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/vaporera.webp" alt="foto de una vaporera" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/freidorasin aceite.png" alt="freidora sin aceite color negro" class="bd-placeholder-img card-img-top" />
 
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                            <a href="./paginas/error404.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/error404.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small>$xxxx</small>
                                     </div>
@@ -342,19 +421,22 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/celular3.webp" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/celular2.png" alt="foto de un celular marca samsung s13 color crema" class="bd-placeholder-img card-img-top" />
 
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                            <a href="./paginas/celular.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/celular.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small>$xxxx</small>
                                     </div>
@@ -364,19 +446,22 @@
 
                         <div class="col">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/computadora2.webp" alt="foto de un gabinete gamer" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/ropa.png" alt="busos de moda color negro talle xl" class="bd-placeholder-img card-img-top" />
 
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                            <a href="./paginas/campera.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/campera.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small>$xxxx</small>
                                     </div>
@@ -385,19 +470,22 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/estuda2.webp" alt="foto de una estufa" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/planchasa.jpg" alt="plancha blanca   de gran durabilidad" class="bd-placeholder-img card-img-top" />
 
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                            <a href="./paginas/error404.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/error404.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small>$xxxx</small>
                                     </div>
@@ -406,19 +494,22 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm bg-transparent">
-                                <img src="./imagenes/televisor2.webp" alt="foto  de televisor" class="bd-placeholder-img card-img-top" width="100%" height="225" />
+                                <img src="./imagenes/maquinadecoser.png" alt="maquina de coser color blanco para profecional" class="bd-placeholder-img card-img-top" />
 
                                 <div class="card-body">
                                     <p class="card-text">informacion del producto</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="./paginas/comprar.html"><button type="button" class="btn btn-sm boto">
-                          comprar
-                        </button></a>
-                                            <a href="./paginas/comprar.html">
+                                            <a href="./paginas/error404.html">
+                                                <button type="button" class="btn btn-sm boto">
+                                                    comprar
+                                                </button>
+                                            </a>
+                                            <a href="./paginas/error404.html">
                                                 <button type="button" class="btn btn-sm botos">
-                          guardar
-                        </button></a>
+                                                    guardar
+                                                </button>
+                                            </a>
                                         </div>
                                         <small>$xxxx</small>
                                     </div>
@@ -431,38 +522,59 @@
         </section>
 
         <section>
-            <div>
-                <p><strong>vendedores con mejores calificacion</strong></p>
-            </div>
+
+            <p><strong>vendedores con mejores calificacion</strong></p>
+
         </section>
 
         <section>
             <article>
+
                 <h2>TOP 1</h2>
-                <img src="./imagenes/usuario.png " alt="foto de el usuario que vende mas " height="100px " width="50px " />
+                <div class="usuario">
+                    <img src="./imagenes/usuario.png " class="image" alt="foto de el usuario que vende mas " />
+
+                    <div class="middle">
+                        <div class="text">rodolfo paz</div>
+                    </div>
+                </div>
                 <p>la mejores productos</p>
             </article>
 
             <article>
+
                 <h2>TOP 2</h2>
-                <img src="./imagenes/usuario.png " alt="foto de el usuario que vende mas " height="100px " width="50px " />
+                <div class="usuario">
+                    <img src="./imagenes/usuario.png " class="image" alt="foto de el usuario que vende mas " />
+
+                    <div class="middle">
+                        <div class="text">juanito ramos</div>
+                    </div>
+                </div>
                 <p>la mejores productos</p>
             </article>
 
             <article>
+
                 <h2>TOP 3</h2>
-                <img src="./imagenes/usuario.png " alt="foto de el usuario que vende mas " height="100px " width="50px " />
+                <div class="usuario">
+                    <img src="./imagenes/usuario.png " class="image" alt="foto de el usuario que vende mas " />
+
+                    <div class="middle">
+                        <div class="text">josepa llanos</div>
+                    </div>
+                </div>
                 <p>la mejores productos</p>
             </article>
         </section>
     </main>
 
-    <!--::::Pie de Pagina::::::-->
+
     <footer class="piePagina">
         <div class="grupo1 animat">
             <div class="box pie-1">
                 <figure>
-                    <a href="# ">
+                    <a href="./index.html">
                         <img src="./imagenes/logoinver.png " alt="Logo de la empresa pp " />
                     </a>
                 </figure>
@@ -481,23 +593,21 @@
             <div class="box pie-3">
                 <h2>SIGUENOS</h2>
                 <div class="redSocial">
-                    <a href="# " class=" "><img src="./imagenes/facebook.svg " alt="imagen del logo de facebook " width="100% " height="100% " /></a>
-                    <a href="# " class=" "><img src="./imagenes/instagram.svg " alt="imagen del logo de instagram " width="100% " height="100% " /></a>
-                    <a href="# " class=" "><img src="./imagenes/whatsapp.svg " alt="imagen del logo de wasap " width="100% " height="100% " /></a>
-                    <a href="# " class=" "><img src="./imagenes/twitter.svg " alt="imagen del logo de twitter " width="100% " height="100% " /></a>
+                    <a href="./paginas/error404.html" class=" "><img src="./imagenes/facebook.svg " alt="imagen del logo de facebook " width="100% " height="100% " /></a>
+                    <a href="./paginas/error404.html" class=" "><img src="./imagenes/instagram.svg " alt="imagen del logo de instagram " width="100% " height="100% " /></a>
+                    <a href="./paginas/error404.html" class=" "><img src="./imagenes/whatsapp.svg " alt="imagen del logo de wasap " width="100% " height="100% " /></a>
+                    <a href="./paginas/error404.html" class=" "><img src="./imagenes/twitter.svg " alt="imagen del logo de twitter " width="100% " height="100% " /></a>
                 </div>
             </div>
         </div>
         <div class="grupo2">
             <small>&copy; 2022 <b>Podes Pagarlo</b> - Todos los Derechos
-        Reservados.</small>
+                Reservados.</small>
         </div>
     </footer>
 
-    <!-- JavaScript Bundle with Popper -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous ">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
 </body>
 
 </html>

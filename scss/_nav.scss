@@ -1,13 +1,14 @@
-@import "-variables";
 li {
+    justify-items: center;
+    align-items: center;
+    text-transform: capitalize;
     margin: 0 0%;
 }
 
 .lupa {
-    border-radius: 35px;
+    border-radius: 50px;
     background: $blanco;
     border: none;
-    color: rgb(254, 153, 0);
     width: auto;
 }
 
@@ -15,11 +16,6 @@ li {
     background: transparent;
     border-radius: 100px;
 }
-
-
-/* fin nav botonera
-
-/* cambio en los logos  */
 
 .logo {
     padding: 0px 0px;

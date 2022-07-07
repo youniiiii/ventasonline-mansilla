@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+$error:'Rubik Moonrocks',
+cursive;
+;
 $blanco:white;
 $rojo:red;
 $letraclasica: 'Great Vibes',
@@ -6,6 +10,11 @@ cursive;
 $colores: ( "principal": #ffffff,
 "secundario": #000000,
 "letras": #ffffff);
+@mixin white-gradient {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 40s;
 @mixin posicion-global( $puno,
 $pdos,
 $ptres,

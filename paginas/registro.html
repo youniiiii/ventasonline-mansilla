@@ -76,37 +76,43 @@
             <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/N3JWgyS6lDU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section>
-            <form action="">
+            
+            <form action="form.php" method="post">
                 <fieldset class="ayuda">
                     <legend id="leg">
                         <h4>registrarme</h4>
                     </legend>
 
-                    <label for="nombre">nombre</label>
+                    <label for="nombres">nombre</label>
                     <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
 
-                    <label for="apellido">apellido</label>
+                    <label for="apellidos">apellido</label>
                     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
 
-                    <label for="email">email</label>
+                    <label for="correo">email</label>
                     <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    
+                    <label for="edad">edad</label>
+                    <input class="controls" type="number" name="edad" id="edad" placeholder="Ingrese su Correo">
+                    
+                    <label for="usuario">usuario</label>
+                    <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingrese su Correo">
 
-                    <label for="password">contraseña</label><input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-                    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese de nuevo su Contraseña">
-
-
+                    <label for="password">contraseña</label>
+                    <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+          
                     <legend id="leg">
                         <h2> Terminos y Condiciones</h2>
                     </legend>
 
                     <label for="si">si acepto</label>
-                    <input type="radio" name="esto" id="si" value="si" required>
+                    <input type="radio" name="si" id="si" value="si" required>
 
                     <label for="no">no acepto</label>
-                    <input type="radio" name="esto" id="no" value="no" required>
+                    <input type="radio" name="no" id="no" value="no" required>
 
 
-                    <input class="botos" type=" submit " value="Registrar ">
+                    <input class="btn btn-light" type="submit" value="Registrar">
                     <p><a href="../paginas/iniciarsesion.html ">¿Ya tengo Cuenta?</a></p>
                 </fieldset>
             </form>

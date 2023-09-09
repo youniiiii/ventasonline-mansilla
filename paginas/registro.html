@@ -76,8 +76,7 @@
             <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/N3JWgyS6lDU?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section>
-            
-            <form action="form.php" method="post">
+            <form action="form.php" method="post" autocapitalize="on">
                 <fieldset class="ayuda">
                     <legend id="leg">
                         <h4>registrarme</h4>
@@ -106,18 +105,12 @@
                     </legend>
 
                     <label for="si">si acepto</label>
-                    <input type="radio" name="si" id="si" value="si">
-
-                    <label for="no">no acepto</label>
-                    <input type="radio" name="no" id="no" value="no">
-
-
+                    <input type="radio" name="si" id="si" required>
                     <input class="btn btn-light" type="submit" value="Registrar">
                     <p><a href="../paginas/iniciarsesion.html ">¿Ya tengo Cuenta?</a></p>
                 </fieldset>
             </form>
         </section>
-
     </main>
 
     <footer class="piePagina ">
@@ -155,7 +148,6 @@
             Reservations.</small>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
 </body>
